@@ -13,7 +13,9 @@
 			<!-- header-->
 			<header class="header" id="header">
 				<div class="wrapper">
-					<div class="header_container">
+					<div class="header__col"> 
+						<!-- logo--><a class="logo" href="#"> <img src="img/logo.svg" alt=""></a>
+						<!-- /logo-->
 						<!-- menu-->
 						<div class="js-menu menu menu--right">
 							<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
@@ -23,20 +25,28 @@
 							</div>
 							<nav class="menu__nav">
 								<ul class="menu__list">
-									<li><a href="#">Меню 1</a></li>
-									<li><a href="#">Меню 2</a></li>
-									<li><a href="#">Меню 3</a></li>
-									<li><a href="#">Меню 4</a></li>
-									<li><a href="#">Меню 5</a></li>
-									<li><a href="#">Меню 6</a></li>
-									<li><a href="#">Меню 7</a></li>
-									<li><a href="#">Меню 8</a></li>
+									<li class="menu__childin"><a href="#">Услуги</a>
+										<ul class="menu__submenu">
+											<li> <a href="#">Доставка грузов</a></li>
+											<li> <a href="#">Таможенное оформление</a></li>
+											<li> <a href="#">Обработка грузов</a></li>
+											<li> <a href="#">Складское хранение</a></li>
+										</ul>
+									</li>
+									<li><a href="#">О нас</a></li>
+									<li><a href="#">Контакты</a></li>
 								</ul>
 								<div class="menu__close" id="menu-close"></div>
 							</nav>
 							<div class="menu__over" id="menu-over"></div>
 						</div>
 						<!-- /menu-->
+					</div>
+					<div class="header__col"> 
+						<div class="phone"><img class="phone__icon" src="img/phone-icon.svg" alt=""><a class="phone__link" href="tel:+78121234567">+7 (812) 123 45 67</a></div>
+						<!-- lang-->
+						<div class="lang"><a class="lang__link" href="#">RU</a><a class="lang__link" href="#">ENG</a></div>
+						<!-- /lang-->
 					</div>
 				</div>
 			</header>
@@ -116,22 +126,22 @@
 						</div>
 					</div>
 					<!-- /tabs-->
-					<!-- accordeon-->
-					<div id="accordeon">
-						<div class="accordeon_item">
-							<div class="accordeon_trigger">triger 1</div>
-							<div class="accordeon_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur, obcaecati repellendus laboriosam at quos, similique saepe hic vero fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quibusdam temporibus officia molestias assumenda, sint deserunt nemo quas dolores fuga maxime, soluta provident blanditiis magni ipsum totam expedita quasi ipsa.</div>
+					<!-- accordion-->
+					<div class="accordion">
+						<div class="accordeon__item">
+							<div class="accordeon__trigger" data-trigger="trigger_1">triger 1</div>
+							<div class="accordeon__content" id="trigger_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur, obcaecati repellendus laboriosam at quos, similique saepe hic vero fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quibusdam temporibus officia molestias assumenda, sint deserunt nemo quas dolores fuga maxime, soluta provident blanditiis magni ipsum totam expedita quasi ipsa.</div>
 						</div>
-						<div class="accordeon_item">
-							<div class="accordeon_trigger">triger 1</div>
-							<div class="accordeon_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur, obcaecati repellendus laboriosam at quos, similique saepe hic vero fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quibusdam temporibus officia molestias assumenda, sint deserunt nemo quas dolores fuga maxime, soluta provident blanditiis magni ipsum totam expedita quasi ipsa.</div>
+						<div class="accordeon__item">
+							<div class="accordeon__trigger" data-trigger="trigger_2">triger 2</div>
+							<div class="accordeon__content" id="trigger_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur, obcaecati repellendus laboriosam at quos, similique saepe hic vero fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quibusdam temporibus officia molestias assumenda, sint deserunt nemo quas dolores fuga maxime, soluta provident blanditiis magni ipsum totam expedita quasi ipsa.</div>
 						</div>
-						<div class="accordeon_item">
-							<div class="accordeon_trigger">triger 1</div>
-							<div class="accordeon_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur, obcaecati repellendus laboriosam at quos, similique saepe hic vero fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quibusdam temporibus officia molestias assumenda, sint deserunt nemo quas dolores fuga maxime, soluta provident blanditiis magni ipsum totam expedita quasi ipsa.</div>
+						<div class="accordeon__item">
+							<div class="accordeon__trigger" data-trigger="trigger_3">triger 3</div>
+							<div class="accordeon__content" id="trigger_3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel consequatur, obcaecati repellendus laboriosam at quos, similique saepe hic vero fugit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet quibusdam temporibus officia molestias assumenda, sint deserunt nemo quas dolores fuga maxime, soluta provident blanditiis magni ipsum totam expedita quasi ipsa.</div>
 						</div>
 					</div>
-					<!-- /accordeon-->
+					<!-- /accordion-->
 					<!-- accordion bootstrap-->
 					<div class="accordionid" id="accordionExample">
 						<div class="accordion-item">

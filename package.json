@@ -17,9 +17,10 @@
     "gulp-pug": "*",
     "gulp-rename": "*",
     "gulp-rigger": "*",
-    "gulp-sass": "*",
+    "gulp-sass": "^5.0.0",
     "gulp-uglify": "*",
-    "imagemin-pngquant": "*"
+    "imagemin-pngquant": "*",
+    "sass": "^1.35.1"
   },
   "dependencies": {},
   "browserslist": "last 5 version"

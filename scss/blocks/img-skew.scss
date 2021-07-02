@@ -1,0 +1,45 @@
+.img-skew {
+  display: inline-block;
+  position: relative;
+  &__skew {
+    transform: skewY(-13deg);
+    overflow: hidden;
+    margin-right: -35px;
+    padding-left: 35px;
+    &--revers {
+      transform: skewY(13deg);
+      margin-right: 0;
+      margin-left: -35px;
+      padding-left: 0;
+      padding-right: 35px;
+    }
+  }
+  &__img {
+    transform: skewY(13deg);
+    margin-top: -12%;
+    margin-bottom: -12%;
+    &--revers {
+      transform: skewY(-13deg);
+    }
+    img {
+      display: block;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    background-color: #DEEDF7;
+    transform: skewY(-13deg);
+    position: absolute;
+    top: -35px;
+    right: -1px;
+    left: -1px;
+    bottom: 35px;
+  }
+  &--revers {
+    &:before {
+      transform: skewY(13deg);
+      background-color: #000;
+    }
+  }
+}

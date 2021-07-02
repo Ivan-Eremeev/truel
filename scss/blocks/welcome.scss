@@ -1,0 +1,67 @@
+.welcome {
+  background-color: $black;
+  padding-top: 75px;
+  padding-bottom: 122px;
+  &__title {
+    text-align: center;
+    margin-bottom: 82px;
+    > * {
+      background-color: #fff;
+    }
+    h1 {
+      padding: 9px 30px;
+      display: inline-block;
+      font-size: 63px;
+      line-height: 68px;
+    }
+    p {
+      padding: 9px 30px;
+      display: inline-block;
+      font-family: "PT Serif";
+      font-size: 38px;
+      line-height: 50px;
+    }
+  }
+  &__subtitle {
+    font-weight: bold;
+    color: $blue;
+    text-transform: uppercase;
+    margin-bottom: 22px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__item {
+    width: 33.33%;
+    height: 100%;
+    padding: 26px 50px 20px 22px;
+    background-color: #fff;
+    border-bottom: 1px solid $bdc;
+    border-right: 1px solid $bdc;
+    position: relative;
+    cursor: pointer;
+    &:before {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url("data:image/svg+xml,%3Csvg width='21' height='24' viewBox='0 0 21 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='10.5' cy='12.5' r='10.5' fill='%23222222'/%3E%3Cpath d='M14.456 12.052L11.156 15.748L10.352 15.064L11.972 13.288C12.284 12.944 12.564 12.692 12.812 12.532H6.464V11.572H12.812C12.644 11.468 12.508 11.372 12.404 11.284C12.308 11.188 12.164 11.032 11.972 10.816L10.352 9.04L11.156 8.356L14.456 12.052Z' fill='white'/%3E%3C/svg%3E%0A");
+      background-size: contain;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+  &__direct {
+    max-width: 240px;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 29px;
+    margin-bottom: 25px;
+  }
+  &__text {
+
+  }
+}

@@ -1,7 +1,13 @@
 // header
 header.header#header
 	.wrapper
-		.header_container
+
+		.header__col 
+
+			// logo
+			a(href="#").logo 
+				img(src="img/logo.svg", alt="")
+			// /logo
 
 			// menu
 			//- .menu--left .menu--right
@@ -11,24 +17,35 @@ header.header#header
 						.hamburger-inner
 				nav.menu__nav
 					ul.menu__list
+						li.menu__childin
+							a(href="#") Услуги
+							ul.menu__submenu
+								li 
+									a(href="#") Доставка грузов
+								li 
+									a(href="#") Таможенное оформление
+								li 
+									a(href="#") Обработка грузов
+								li 
+									a(href="#") Складское хранение
 						li
-							a(href="#") Меню 1
+							a(href="#") О нас
 						li
-							a(href="#") Меню 2
-						li
-							a(href="#") Меню 3
-						li
-							a(href="#") Меню 4
-						li
-							a(href="#") Меню 5
-						li
-							a(href="#") Меню 6
-						li
-							a(href="#") Меню 7
-						li
-							a(href="#") Меню 8
+							a(href="#") Контакты
 					#menu-close.menu__close
 				#menu-over.menu__over
 			// /menu
+
+		.header__col 
+
+			.phone
+				img(src="img/phone-icon.svg", alt="").phone__icon
+				a(href="tel:+78121234567").phone__link +7 (812) 123 45 67
+
+			// lang
+			.lang
+				a(href="#").lang__link RU
+				a(href="#").lang__link ENG
+			// /lang
 
 // /header

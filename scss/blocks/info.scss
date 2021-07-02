@@ -1,0 +1,111 @@
+.info {
+  overflow: hidden;
+  &__container {
+    padding-top: 140px;
+    padding-bottom: 170px;
+    position: relative;
+    border-left: 1px solid $bdc;
+    border-right: 1px solid $bdc;
+  }
+  .row {
+    @include no-gutter();
+    position: relative;
+    z-index: 2;
+  }
+  &__col {
+    @include col(6);
+    &--center {
+      text-align: center;
+    }
+    &--right {
+      .info__text {
+        margin-left: auto;
+      }
+    }
+  }
+  &__imgskew {
+    transform: skewY(-13deg);
+    overflow: hidden;
+    margin-right: -35px;
+    padding-left: 33px;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background-color: #DEEDF7;
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+    }
+  }
+  &__img {
+    width: 100%;
+    transform: skewY(13deg);
+    margin-top: -67px;
+    margin-bottom: -67px;
+    img {
+      display: block;
+    }
+  }
+  &__text {
+    max-width: 500px;
+    &--pr {
+      padding-right: 20px;
+    }
+    &--pl {
+      padding-left: 20px;
+    }
+  }
+  .text {
+    margin-bottom: 55px;
+    h6 {
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 34px;
+      color: $blue;
+    }
+    h3 {
+      line-height: 48px;
+      margin-bottom: 15px;
+    }
+    p {
+      line-height: 26px;
+      margin-bottom: 16px;
+    }
+    a {
+      padding-right: 40px;
+      color: #222;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 15px;
+        background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1189 14.9489L21.1322 7.93553C21.2892 7.77857 21.2892 7.52413 21.1322 7.36714L14.1189 0.353799C13.9619 0.196846 13.7075 0.196846 13.5505 0.353799L12.8874 1.0169C12.7305 1.17382 12.7305 1.42827 12.8874 1.58525L18.0828 6.78057H0.451688C0.22975 6.78057 0.0498047 6.96052 0.0498047 7.18245V8.12018C0.0498047 8.34212 0.22975 8.52207 0.451688 8.52207H18.0828L12.8874 13.7174C12.7305 13.8744 12.7305 14.1288 12.8874 14.2858L13.5505 14.9489C13.7075 15.1058 13.9619 15.1058 14.1189 14.9489Z' fill='%23438FC9'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 5px;
+        right: 0;
+      }
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+  &--black {
+    background-color: $black;
+    color: #fff;
+    .info__container {
+      padding-top: 160px;
+      padding-bottom: 182px;
+    }
+    .text {
+      a {
+        color: #fff;
+      }
+    }
+  }
+}

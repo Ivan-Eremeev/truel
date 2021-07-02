@@ -6,8 +6,8 @@
 
 // Переменные для кастомизации Mixingrid
 $columns: 12; // Колличество колонок
-$max-width: 1200px; // Максимальная ширина контейнера
-$gutter: 15px; // Расстояние между колонками
+$max-width: 1180px; // Максимальная ширина контейнера
+$gutter: 20px; // Расстояние между колонками
 $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
 // Брэйкпоинты
@@ -18,16 +18,30 @@ $break_sm: 769px;
 $break_xs: 500px;
 
 // Шрифты
-// @include font-face("EastAP", "../fonts/EastAP/EastAP", bold, italic);
+@include font-face("PT Sans", "../fonts/pt-sans/pt-sans-v12-latin_cyrillic-regular", normal, normal);
+@include font-face("PT Sans", "../fonts/pt-sans/pt-sans-v12-latin_cyrillic-700", bold, normal);
+
+@include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-regular", normal, normal);
+@include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-700", bold, normal);
+
+@include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-regular", normal, normal);
+@include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-700", bold, normal);
 
 // Цвета
-// $black: #000;
+$black: #0D1B2B;
+$blue: #67B4EE;
+$blueDark: #438FC9;
+$bdc: #E7E7E7;
 
 // Подключение файлов
 @import 'blocks/settings';
-@import 'hamburgers/hamburgers';
+// @import 'hamburgers/hamburgers';
 @import 'blocks/menu';
 @import 'blocks/accordion';
+@import 'blocks/header';
+@import 'blocks/welcome';
+@import 'blocks/info';
+@import 'blocks/img-skew';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 // @import 'blocks/tabs';
