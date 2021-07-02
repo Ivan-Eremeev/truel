@@ -739,6 +739,12 @@ h5, h6 {
 .info--black .text a {
   color: #fff;
 }
+.info--black .line {
+  background-color: #24303F;
+}
+.info--black .info__container {
+  border-color: #24303F;
+}
 
 .img-skew {
   display: inline-block;
