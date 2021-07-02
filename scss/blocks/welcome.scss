@@ -53,6 +53,11 @@
       right: 20px;
       bottom: 20px;
     }
+    &:hover {
+      .welcome__direct {
+        color: $blue;
+      }
+    }
   }
   &__direct {
     max-width: 240px;
@@ -60,6 +65,7 @@
     font-size: 21px;
     line-height: 29px;
     margin-bottom: 25px;
+    transition: 0.2s;
   }
   &__text {
 

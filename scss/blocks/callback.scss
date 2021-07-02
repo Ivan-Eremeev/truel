@@ -1,0 +1,49 @@
+.callback {
+  padding-top: 40px;
+  padding-bottom: 102px;
+  position: relative;
+  &__text {
+    margin-bottom: 34px;
+    text-align: center;
+  }
+  &__phone {
+    font-family: "PT Serif";
+    font-size: 71px;
+    line-height: 61px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+  }
+  &__btn {
+    width: 50%;
+    text-align: right;
+    flex-shrink: 0;
+  }
+  &__link {
+    width: 50%;
+    margin-left: 22px;
+    a {
+      position: relative;
+      padding-right: 40px;
+      &:after {
+        content: '';
+        display: block;
+        width: 21px;
+        height: 15px;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='22' height='16' viewBox='0 0 22 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.1189 14.9489L21.1322 7.93553C21.2892 7.77857 21.2892 7.52413 21.1322 7.36714L14.1189 0.353799C13.9619 0.196846 13.7075 0.196846 13.5505 0.353799L12.8874 1.0169C12.7305 1.17382 12.7305 1.42827 12.8874 1.58525L18.0828 6.78057H0.451688C0.22975 6.78057 0.0498047 6.96052 0.0498047 7.18245V8.12018C0.0498047 8.34212 0.22975 8.52207 0.451688 8.52207H18.0828L12.8874 13.7174C12.7305 13.8744 12.7305 14.1288 12.8874 14.2858L13.5505 14.9489C13.7075 15.1058 13.9619 15.1058 14.1189 14.9489Z' fill='%23438FC9'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.advantages {
+  padding-top: 124px;
+  padding-bottom: 70px;
+  &__title {
+    text-align: center;
+    margin-bottom: 52px;
+    position: relative;
+  }
+  .row {
+    @include no-gutter();
+  }
+  &__col {
+    @include col(3);
+  }
+  &__item {
+    height: 100%;
+    padding: 50px 40px 44px;
+    background-color: #fff;
+    &:hover {
+      .advantages__text {
+        h4 {
+          color: $blue;
+        }
+      }
+    }
+  }
+  &__icon {
+    margin-bottom: 20px;
+  }
+  &__text {
+    h4 {
+      font-weight: bold;
+      line-height: 29px;
+      margin-bottom: 5px;
+      transition: 0.2s;
+    }
+  }
+}

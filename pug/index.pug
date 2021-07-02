@@ -51,7 +51,7 @@ block content
 			//	/welcome
 
 			// info
-			.info
+			section.info
 				.wrapper
 					.info__container
 						.line.line--1
@@ -80,7 +80,7 @@ block content
 			//	/info
 
 			// info
-			.info.info--black
+			section.info.info--black
 				.wrapper
 					.info__container
 						.line.line--1
@@ -92,7 +92,7 @@ block content
 								.img-skew.img-skew--revers
 									.img-skew__skew.img-skew__skew--revers
 										.img-skew__img.img-skew__img--revers
-											img(src="img/image-1.jpg", alt="")
+											img(src="img/image-2.jpg", alt="")
 								//	/img-skew
 							.info__col.info__col--right
 								.info__text.info__text--pl
@@ -105,8 +105,65 @@ block content
 											a(href="#") Обработка грузов
 										p
 											a(href="#") Таможенное оформление
-									.btn.btn--blue Зарезервировать место в сборной фуре 
+									.btn.btn--blue
+										span.btn__front Зарезервировать место в сборной фуре 
 			//	/info
+
+			.wrapper 
+				.lines__container 
+					.line.line--1
+					.line.line--2
+					.line.line--3
+					// advantages
+					section.advantages
+						.advantages__title 
+							h2 Почему выбирают нас
+						.row 
+							.advantages__col 
+								.advantages__item
+									.advantages__icon 
+										img(src="img/hours_icon.svg", alt="")
+									.advantages__text 
+										.text 
+											h4 Работаем 24/7
+											p Круглосуточная поддержка клиентов 
+							.advantages__col 
+								.advantages__item
+									.advantages__icon 
+										img(src="img/car_icon.svg", alt="")
+									.advantages__text 
+										.text 
+											h4 Более 10 машин
+											p Собственный грузовой автопарк
+							.advantages__col 
+								.advantages__item
+									.advantages__icon 
+										img(src="img/rouble_icon.svg", alt="")
+									.advantages__text 
+										.text 
+											h4 Гибкое и доступное ценообразование
+							.advantages__col 
+								.advantages__item
+									.advantages__icon 
+										img(src="img/shild_icon.svg", alt="")
+									.advantages__text 
+										.text 
+											h4 Ответственность
+											p Страхуем все отправления и несем материальную ответственость
+					//	/advantages
+
+					// callback
+					.callback
+						.callback__text Если у вас возникли вопросы мы готовы на них ответить
+						.callback__phone 
+							a(href="tel:+78121234567") +7 (812) 123 45 67
+						.callback__row
+							.callback__btn
+								.btn.btn--white 
+									.btn__front Заказать звонок
+							.callback__link 
+								a(href="#") Перейти в контакты
+					//	/callback
 			
 		include blocks/footer.pug
 
