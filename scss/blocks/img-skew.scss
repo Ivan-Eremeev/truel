@@ -42,4 +42,21 @@
       background-color: #000;
     }
   }
+  @media (max-width: $break_sm) {
+    margin-left: 71px;
+    &__skew {
+      padding-left: 24px;
+      &--revers {
+        padding-left: 0;
+        padding-right: 24px;
+      }
+    }
+    &:before {
+      top: -24px;
+    }
+    &--revers {
+      margin-left: 0;
+      margin-right: 65px;
+    }
+  }
 }

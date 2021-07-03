@@ -11,6 +11,7 @@
   }
   &__col {
     @include col(3);
+    @include col-sm(12);
   }
   &__item {
     height: 100%;
@@ -35,6 +36,34 @@
       line-height: 29px;
       margin-bottom: 5px;
       transition: 0.2s;
+    }
+  }
+  @media (max-width: $break_sm) {
+    padding-top: 98px;
+    padding-bottom: 12px;
+    &__title {
+      text-align: left;
+      margin-bottom: 30px;
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+      }
+    }
+    &__col {
+      margin-bottom: 10px;
+    }
+    &__item {
+      display: flex;
+      padding: 33px 34px 18px;
+      background-color: #fff;
+      position: relative;
+    }
+    &__icon {
+      flex-shrink: 0;
+      margin-right: 33px;
+    }
+    &__text {
+      padding-top: 10px;
     }
   }
 }

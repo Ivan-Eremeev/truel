@@ -11,18 +11,13 @@
 	<body>
 		<div class="page">
 			<!-- header-->
-			<header class="header" id="header">
+			<header class="header">
 				<div class="wrapper">
 					<div class="header__col"> 
 						<!-- logo--><a class="logo" href="#"> <img src="img/logo.svg" alt=""></a>
 						<!-- /logo-->
 						<!-- menu-->
-						<div class="js-menu menu menu--right">
-							<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
-								<div class="hamburger-box">
-									<div class="hamburger-inner"></div>
-								</div>
-							</div>
+						<div class="menu menu--left" id="menu">
 							<nav class="menu__nav">
 								<ul class="menu__list">
 									<li class="menu__childin"><a class="js-click" href="#">Услуги</a>
@@ -38,12 +33,16 @@
 								</ul>
 								<div class="menu__close" id="menu-close"></div>
 							</nav>
-							<div class="menu__over" id="menu-over"></div>
 						</div>
 						<!-- /menu-->
 					</div>
 					<div class="header__col"> 
 						<div class="phone"><img class="phone__icon" src="img/phone-icon.svg" alt=""><a class="phone__link" href="tel:+78121234567">+7 (812) 123 45 67</a></div>
+						<div class="js-menu-btn menu__btn hamburger hamburger--squeeze mobile-visible" data-menuid="#menu">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
 						<!-- lang-->
 						<div class="lang"><a class="lang__link" href="#">RU</a><a class="lang__link" href="#">ENG</a></div>
 						<!-- /lang-->

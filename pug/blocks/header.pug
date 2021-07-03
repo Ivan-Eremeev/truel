@@ -1,5 +1,5 @@
 // header
-header.header#header
+header.header
 	.wrapper
 
 		.header__col 
@@ -11,10 +11,7 @@ header.header#header
 
 			// menu
 			//- .menu--left .menu--right
-			.js-menu.menu.menu--right
-				#menu-btn.menu__btn.hamburger.hamburger--squeeze
-					.hamburger-box
-						.hamburger-inner
+			#menu.menu.menu--left
 				nav.menu__nav
 					ul.menu__list
 						li.menu__childin
@@ -45,7 +42,6 @@ header.header#header
 						li
 							a(href="#") Контакты
 					#menu-close.menu__close
-				#menu-over.menu__over
 			// /menu
 
 		.header__col 
@@ -53,6 +49,10 @@ header.header#header
 			.phone
 				img(src="img/phone-icon.svg", alt="").phone__icon
 				a(href="tel:+78121234567").phone__link +7 (812) 123 45 67
+
+			.js-menu-btn.menu__btn.hamburger.hamburger--squeeze(data-menuid="#menu").mobile-visible
+					.hamburger-box
+						.hamburger-inner
 
 			// lang
 			.lang

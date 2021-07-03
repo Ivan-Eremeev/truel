@@ -11,18 +11,13 @@
 	<body>
 		<div class="page">
 			<!-- header-->
-			<header class="header" id="header">
+			<header class="header">
 				<div class="wrapper">
 					<div class="header__col"> 
 						<!-- logo--><a class="logo" href="#"> <img src="img/logo.svg" alt=""></a>
 						<!-- /logo-->
 						<!-- menu-->
-						<div class="js-menu menu menu--right">
-							<div class="menu__btn hamburger hamburger--squeeze" id="menu-btn">
-								<div class="hamburger-box">
-									<div class="hamburger-inner"></div>
-								</div>
-							</div>
+						<div class="menu menu--left" id="menu">
 							<nav class="menu__nav">
 								<ul class="menu__list">
 									<li class="menu__childin"><a class="js-click" href="#">Услуги</a>
@@ -38,12 +33,16 @@
 								</ul>
 								<div class="menu__close" id="menu-close"></div>
 							</nav>
-							<div class="menu__over" id="menu-over"></div>
 						</div>
 						<!-- /menu-->
 					</div>
 					<div class="header__col"> 
 						<div class="phone"><img class="phone__icon" src="img/phone-icon.svg" alt=""><a class="phone__link" href="tel:+78121234567">+7 (812) 123 45 67</a></div>
+						<div class="js-menu-btn menu__btn hamburger hamburger--squeeze mobile-visible" data-menuid="#menu">
+							<div class="hamburger-box">
+								<div class="hamburger-inner"></div>
+							</div>
+						</div>
 						<!-- lang-->
 						<div class="lang"><a class="lang__link" href="#">RU</a><a class="lang__link" href="#">ENG</a></div>
 						<!-- /lang-->
@@ -57,7 +56,7 @@
 					<div class="wrapper"> 
 						<div class="welcome__title">
 							<h1>Доставка сборных грузов </h1>
-							<p>с  реальными  сроками и  реальными  условиями</p>
+							<p> <span>с  реальными  сроками </span><span>и  реальными  условиями</span></p>
 						</div>
 						<div class="welcome__subtitle">Популярные направления:</div>
 						<div class="welcome__row">
@@ -93,9 +92,9 @@
 				<section class="info">
 					<div class="wrapper">
 						<div class="info__container">
-							<div class="line line--1"></div>
+							<div class="line line--1 mobile-hide"></div>
 							<div class="line line--2"></div>
-							<div class="line line--3"></div>
+							<div class="line line--3 mobile-hide"></div>
 							<div class="row"> 
 								<div class="info__col"> 
 									<div class="info__text info__text--pr">
@@ -128,11 +127,11 @@
 				<section class="info info--black">
 					<div class="wrapper">
 						<div class="info__container">
-							<div class="line line--1"></div>
+							<div class="line line--1 mobile-hide"></div>
 							<div class="line line--2"></div>
-							<div class="line line--3"></div>
+							<div class="line line--3 mobile-hide"></div>
 							<div class="row"> 
-								<div class="info__col info__col--center">
+								<div class="info__col info__col--center info__col--order-mob2">
 									<!-- img-skew-->
 									<div class="img-skew img-skew--revers">
 										<div class="img-skew__skew img-skew__skew--revers">
@@ -141,7 +140,7 @@
 									</div>
 									<!--	/img-skew-->
 								</div>
-								<div class="info__col info__col--right">
+								<div class="info__col info__col--right info__col--order-mob1">
 									<div class="info__text info__text--pl">
 										<div class="text"> 
 											<h6>О нас</h6>
@@ -161,9 +160,9 @@
 				<!--	/info-->
 				<div class="wrapper"> 
 					<div class="lines__container"> 
-						<div class="line line--1"></div>
+						<div class="line line--1 mobile-hide"></div>
 						<div class="line line--2"></div>
-						<div class="line line--3"></div>
+						<div class="line line--3 mobile-hide"></div>
 						<!-- advantages-->
 						<section class="advantages">
 							<div class="advantages__title"> 
@@ -218,8 +217,9 @@
 						<!--	/advantages-->
 						<!-- callback-->
 						<div class="callback">
-							<div class="callback__text">Если у вас возникли вопросы мы готовы на них ответить</div>
-							<div class="callback__phone"> <a href="tel:+78121234567">+7 (812) 123 45 67</a></div>
+							<div class="callback__text"> 
+								<p>Если у вас возникли вопросы мы готовы на них ответить <a href="tel:+78121234567">+7 (812) 123 45 67</a></p>
+							</div>
 							<div class="callback__row">
 								<div class="callback__btn">
 									<div class="btn btn--white"> 

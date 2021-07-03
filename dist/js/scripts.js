@@ -69,46 +69,39 @@ $(document).ready(function () {
 	// };
 	// myMenu($('.js-menu'));
 
-	function myMenu(menu) {
-		if (menu.length) {
-			menu.each(function () {
-				var $this = $(this),
-					menuBtn = $('.js-menu-btn'),
-					over = $this.find('#menu-over'),
-					close = $this.find('#menu-close'),
-					body = $('body'),
-					scrollbarWidth;
-				menuBtn.on('click', toggleOpenMenu);
-				over.on('click', menuClose);
-				close.on('click', menuClose);
-				function menuOpen() { // Открывание меню
-					body.addClass('lock').css('padding-right', scrollbarWidth);
-					$this.addClass('open');
-					menuBtn.addClass('is-active');
-				}
-				function menuClose() { // Закрывание меню
-					body.removeClass('lock').css('padding-right', 0);
-					$this.removeClass('open');
-					menuBtn.removeClass('is-active');
-				}
-				function scrollbarWidthCalc() { // Вычисление ширины скролла
-					var documentWidth = parseInt(document.documentElement.clientWidth),
-						windowsWidth = parseInt(window.innerWidth);
+	function myMenu() {
+		var	menuBtn = $('.js-menu-btn'),
+				body = $('body'),
+				scrollbarWidth;
+		menuBtn.on('click', function () {
+			var btn = $(this),
+					data = btn.data('menuid'),
+					thisMenu = $(data),
+					close = thisMenu.find('#menu-close');
+			if (!btn.hasClass('active')) {
+				body.addClass('lock').css('padding-right', scrollbarWidth);
+				thisMenu.addClass('open');
+				btn.addClass('is-active');
+			}else {
+				body.removeClass('lock').css('padding-right', scrollbarWidth);
+				thisMenu.removeClass('open');
+				btn.removeClass('is-active');
+			}
+			close.on('click', function () {
+				body.removeClass('lock').css('padding-right', scrollbarWidth);
+				thisMenu.removeClass('open');
+				btn.removeClass('is-active');
+			});
+		});
+		function scrollbarWidthCalc() { // Вычисление ширины скролла
+			var documentWidth = parseInt(document.documentElement.clientWidth),
+					windowsWidth = parseInt(window.innerWidth);
 					scrollbarWidth = windowsWidth - documentWidth;
-				}
-				function toggleOpenMenu() { // Открывание/закрывание меню
-					if ($this.hasClass('open')) {
-						menuClose();
-					} else {
-						menuOpen();
-					}
-				}
-				scrollbarWidthCalc();
-				$(window).resize(scrollbarWidthCalc);
-			})
-		};
+		}
+		scrollbarWidthCalc();
+		$(window).resize(scrollbarWidthCalc);
 	};
-	myMenu($('.js-menu'));
+	myMenu($(''));
 
 	// // Блок с высотой окна браузера
 	// function screenHeight(fullHeight) {

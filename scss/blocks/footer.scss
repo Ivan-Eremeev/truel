@@ -12,6 +12,7 @@
   }
   &__col {
     @include col(3);
+    @include col-sm(6);
     &--big {
       @include col(6);
     }
@@ -55,6 +56,27 @@
       &:hover {
         color: $blue;
       }
+    }
+  }
+  @media (max-width: $break_sm) {
+    .lines__container {
+      padding-top: 42px;
+      padding-bottom: 37px;
+    }
+    .row {
+      padding-bottom: 53px;
+    }
+    &__col {
+      &--big {
+        display: none;
+      }
+    }
+    &__nav {
+      padding-top: 0;
+    }
+    &__bottom {
+      padding-top: 30px;
+      text-align: center;
     }
   }
 }

@@ -27,7 +27,9 @@ block content
 				.wrapper 
 					.welcome__title
 						h1 Доставка сборных грузов 
-						p с  реальными  сроками и  реальными  условиями
+						p 
+							span с  реальными  сроками 
+							span и  реальными  условиями
 					.welcome__subtitle Популярные направления:
 					.welcome__row
 						.welcome__item 
@@ -54,9 +56,9 @@ block content
 			section.info
 				.wrapper
 					.info__container
-						.line.line--1
+						.line.line--1.mobile-hide
 						.line.line--2
-						.line.line--3
+						.line.line--3.mobile-hide
 						.row 
 							.info__col 
 								.info__text.info__text--pr
@@ -83,18 +85,18 @@ block content
 			section.info.info--black
 				.wrapper
 					.info__container
-						.line.line--1
+						.line.line--1.mobile-hide
 						.line.line--2
-						.line.line--3
+						.line.line--3.mobile-hide
 						.row 
-							.info__col.info__col--center
+							.info__col.info__col--center.info__col--order-mob2
 								// img-skew
 								.img-skew.img-skew--revers
 									.img-skew__skew.img-skew__skew--revers
 										.img-skew__img.img-skew__img--revers
 											img(src="img/image-2.jpg", alt="")
 								//	/img-skew
-							.info__col.info__col--right
+							.info__col.info__col--right.info__col--order-mob1
 								.info__text.info__text--pl
 									.text 
 										h6 О нас
@@ -111,9 +113,9 @@ block content
 
 			.wrapper 
 				.lines__container 
-					.line.line--1
+					.line.line--1.mobile-hide
 					.line.line--2
-					.line.line--3
+					.line.line--3.mobile-hide
 					// advantages
 					section.advantages
 						.advantages__title 
@@ -154,9 +156,9 @@ block content
 
 					// callback
 					.callback
-						.callback__text Если у вас возникли вопросы мы готовы на них ответить
-						.callback__phone 
-							a(href="tel:+78121234567") +7 (812) 123 45 67
+						.callback__text 
+							p Если у вас возникли вопросы мы готовы на них ответить 
+								a(href="tel:+78121234567") +7 (812) 123 45 67
 						.callback__row
 							.callback__btn
 								.btn.btn--white 
