@@ -66,4 +66,9 @@
       padding-top: 10px;
     }
   }
+  @media (max-width: $break_xs) {
+    &__item {
+      padding: 33px 10px 18px;
+    }
+  }
 }

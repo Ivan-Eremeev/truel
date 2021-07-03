@@ -7070,7 +7070,6 @@ h5, h6 {
 }
 .welcome__item {
   width: 33.33%;
-  height: 100%;
   padding: 26px 50px 20px 22px;
   background-color: #fff;
   border-bottom: 1px solid #E7E7E7;
@@ -7456,6 +7455,11 @@ h5, h6 {
     padding-top: 10px;
   }
 }
+@media (max-width: 500px) {
+  .advantages__item {
+    padding: 33px 10px 18px;
+  }
+}
 
 .callback {
   padding-top: 40px;
@@ -7474,6 +7478,7 @@ h5, h6 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 45px;
+  white-space: nowrap;
 }
 .callback__row {
   display: -webkit-box;
