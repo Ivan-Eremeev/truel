@@ -1,5 +1,42 @@
 // footer
 footer.footer 
 	.wrapper 
-		.licence Футер
+		.lines__container.lines__container--dark
+			.line.line--1
+			.line.line--2
+			.line.line--3
+			.row 
+
+				.footer__col.footer__col--big
+					// logo
+					a(href="#").logo 
+						img(src="img/logo.svg", alt="")
+					// /logo
+
+				.footer__col
+					.footer__nav 
+						.footer__title Компания
+						ul.footer__list 
+							li 
+								a(href="#") Скачать реквизиты
+							li 
+								a(href="#") О нас
+							li 
+								a(href="#") Контакты
+
+				.footer__col
+					.footer__nav 
+						.footer__title Мы в соцсетях
+						ul.footer__list 
+							li 
+								<i class="fab fa-facebook-square"></i>
+								a(href="#") Facebook
+							li 
+								<i class="fab fa-vk"></i>
+								a(href="#") Вконтакте
+
+			.footer__bottom 
+				p © 2021 ООО «Труэл», 
+					a(href="#") политика конфиденциальности
+				p ООО «Труэл» ИНН: 7813615701, ОГРН: 1187847202223. Официальный партнер ООО «Фура МКС», ООО «Арселанъ» и ООО «ВЭД-сервис». 
 // /footer

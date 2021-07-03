@@ -1,5 +1,6 @@
 .header {
   background-color: #fff;
+  border-bottom: 1px solid $bdc;
   .wrapper {
     display: flex;
     justify-content: space-between;
@@ -12,13 +13,19 @@
 .logo {
   max-width: 130px;
   max-height: 150px;
+  @media (max-width: $break_sm) {
+    max-width: 86px;
+    max-height: 86px;
+  }
 }
 
 .phone {
   display: flex;
+  padding-left: 30px;
   align-items: center;
   font-size: 21px;
   line-height: 24px;
+  border-left: 1px solid $bdc;
   &__icon {
     margin-right: 13px;
   }
@@ -47,5 +54,8 @@
     &:hover {
       color: $blue;
     }
+  }
+  @media (max-width: $break_sm) {
+    display: none;
   }
 }

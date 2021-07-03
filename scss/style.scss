@@ -27,6 +27,9 @@ $break_xs: 500px;
 @include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-regular", normal, normal);
 @include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-700", bold, normal);
 
+@import 'fontawesome/fontawesome';
+@import 'fontawesome/brands';
+
 // Цвета
 $black: #0D1B2B;
 $blue: #67B4EE;
@@ -35,7 +38,7 @@ $bdc: #E7E7E7;
 
 // Подключение файлов
 @import 'blocks/settings';
-// @import 'hamburgers/hamburgers';
+@import 'hamburgers/hamburgers';
 @import 'blocks/menu';
 @import 'blocks/accordion';
 @import 'blocks/header';

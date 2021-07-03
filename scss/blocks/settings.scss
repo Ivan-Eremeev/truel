@@ -210,5 +210,11 @@ h5, h6 {
   position: relative;
   border-left: 1px solid $bdc;
   border-right: 1px solid $bdc;
+  &--dark {
+    border-color: #24303F;
+    .line {
+      background-color: #24303F;
+    }
+  }
 }
 /* /settings */

@@ -28,15 +28,56 @@ $(document).ready(function () {
 	});
 
 	// Мобильное меню
+	// function myMenu(menu) {
+	// 	if (menu.length) {
+	// 		menu.each(function () {
+	// 			var $this = $(this),
+	// 					menuBtn = $this.find('#menu-btn'),
+	// 					over = $this.find('#menu-over'),
+	// 					close = $this.find('#menu-close'),
+	// 					body = $('body'),
+	// 					scrollbarWidth;
+	// 			menuBtn.on('click', toggleOpenMenu);
+	// 			over.on('click', menuClose);
+	// 			close.on('click', menuClose);
+	// 			function menuOpen() { // Открывание меню
+	// 				body.addClass('lock').css('padding-right', scrollbarWidth);
+	// 				$this.addClass('open');
+	// 				menuBtn.addClass('is-active');
+	// 			}
+	// 			function menuClose() { // Закрывание меню
+	// 				body.removeClass('lock').css('padding-right', 0);
+	// 				$this.removeClass('open');
+	// 				menuBtn.removeClass('is-active');
+	// 			}
+	// 			function scrollbarWidthCalc() { // Вычисление ширины скролла
+	// 				var documentWidth = parseInt(document.documentElement.clientWidth),
+	// 						windowsWidth = parseInt(window.innerWidth);
+	// 						scrollbarWidth = windowsWidth - documentWidth;
+	// 			}
+	// 			function toggleOpenMenu() { // Открывание/закрывание меню
+	// 				if ($this.hasClass('open')) {
+	// 					menuClose();
+	// 				}else {
+	// 					menuOpen();
+	// 				}
+	// 			}
+	// 			scrollbarWidthCalc();
+	// 			$(window).resize(scrollbarWidthCalc);
+	// 		})
+	// 	};
+	// };
+	// myMenu($('.js-menu'));
+
 	function myMenu(menu) {
 		if (menu.length) {
 			menu.each(function () {
 				var $this = $(this),
-						menuBtn = $this.find('#menu-btn'),
-						over = $this.find('#menu-over'),
-						close = $this.find('#menu-close'),
-						body = $('body'),
-						scrollbarWidth;
+					menuBtn = $('.js-menu-btn'),
+					over = $this.find('#menu-over'),
+					close = $this.find('#menu-close'),
+					body = $('body'),
+					scrollbarWidth;
 				menuBtn.on('click', toggleOpenMenu);
 				over.on('click', menuClose);
 				close.on('click', menuClose);
@@ -52,13 +93,13 @@ $(document).ready(function () {
 				}
 				function scrollbarWidthCalc() { // Вычисление ширины скролла
 					var documentWidth = parseInt(document.documentElement.clientWidth),
-							windowsWidth = parseInt(window.innerWidth);
-							scrollbarWidth = windowsWidth - documentWidth;
+						windowsWidth = parseInt(window.innerWidth);
+					scrollbarWidth = windowsWidth - documentWidth;
 				}
 				function toggleOpenMenu() { // Открывание/закрывание меню
 					if ($this.hasClass('open')) {
 						menuClose();
-					}else {
+					} else {
 						menuOpen();
 					}
 				}
@@ -522,15 +563,15 @@ $(document).ready(function () {
 	// 	}, 'xml');
 	// });
 
-	// // Присваивание класса при клике
-	// function clickToggle(block) {
-	// 	if (block.length) {
-	// 		block.on('click', function () {
-	// 			$(this).toggleClass('active');
-	// 		});
-	// 	}
-	// }
-	// clickToggle($('.click'));
+	// Присваивание класса при клике
+	function clickToggle(block) {
+		if (block.length) {
+			block.on('click', function () {
+				$(this).toggleClass('active');
+			});
+		}
+	}
+	clickToggle($('.js-click'));
 
 	// // AOS | Анимация при скролле
 	// AOS.init();
