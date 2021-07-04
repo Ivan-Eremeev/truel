@@ -20,9 +20,12 @@ $break_xs: 500px;
 // Шрифты
 @include font-face("PT Sans", "../fonts/pt-sans/pt-sans-v12-latin_cyrillic-regular", normal, normal);
 @include font-face("PT Sans", "../fonts/pt-sans/pt-sans-v12-latin_cyrillic-700", bold, normal);
+@include font-face("PT Sans", "../fonts/pt-sans/pt-sans-v12-latin_cyrillic-italic", normal, italic);
 
 @include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-regular", normal, normal);
 @include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-700", bold, normal);
+@include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-italic", normal, italic);
+@include font-face("PT Serif", "../fonts/pt-serif-v12-latin_cyrillic-700italic", bold, italic);
 
 @include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-regular", normal, normal);
 @include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-700", bold, normal);
@@ -48,6 +51,9 @@ $bdc: #E7E7E7;
 @import 'blocks/advantages';
 @import 'blocks/callback';
 @import 'blocks/footer';
+@import 'blocks/pagination';
+@import 'blocks/about';
+@import 'blocks/cases';
 // @import 'blocks/modal';
 // @import 'blocks/tooltipster-noir';
 // @import 'blocks/tabs';

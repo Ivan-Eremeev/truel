@@ -1,0 +1,35 @@
+.pagination {
+  padding: 10px 0;
+  &__list {
+    display: flex; 
+    flex-wrap: wrap;
+    margin-left: -12px;
+    font-size: 15px;
+    line-height: 21px;
+    li {
+      margin-left: 12px;
+    }
+    a {
+      padding-right: 16px;
+      position: relative;
+      &:after {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 11px;
+        position: absolute;
+        top: 6px;
+        right: 0;
+        background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.01758 4.06836C4.125 3.96094 4.125 3.81055 4.01758 3.70312L0.880859 0.523438C0.773438 0.416016 0.601562 0.416016 0.515625 0.523438L0.0859375 0.953125C-0.0214844 1.03906 -0.0214844 1.21094 0.0859375 1.31836L2.62109 3.875L0.0859375 6.45312C-0.0214844 6.56055 -0.0214844 6.71094 0.0859375 6.81836L0.515625 7.24805C0.601562 7.35547 0.773438 7.35547 0.880859 7.24805L4.01758 4.06836Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        background-repeat: no-repeat;
+      }
+      &:hover {
+        color: $blue;
+      }
+    }
+    span {
+      
+    }
+  }
+}
