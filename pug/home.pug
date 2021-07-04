@@ -1,0 +1,142 @@
+extends blocks/base.pug
+
+block title 
+	title Главная
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			
+			// welcome
+			section.welcome
+				.wrapper 
+					.welcome__title
+						h1 Доставка сборных грузов 
+						p 
+							span с  реальными  сроками 
+							span и  реальными  условиями
+					.welcome__subtitle Популярные направления:
+					.welcome__row
+						.welcome__item 
+							.welcome__direct Северная Америка — Россия
+							.welcome__text Сроки и цены
+						.welcome__item 
+							.welcome__direct Северная Америка — Россия
+							.welcome__text Сроки и цены
+						.welcome__item 
+							.welcome__direct Северная Америка — Россия
+							.welcome__text Сроки и цены
+						.welcome__item 
+							.welcome__direct Китай и Азия — Россия
+							.welcome__text Сроки и цены
+						.welcome__item 
+							.welcome__direct Китай и Азия — Россия
+							.welcome__text Сроки и цены
+						.welcome__item 
+							.welcome__direct Китай и Азия — Россия
+							.welcome__text Сроки и цены
+			//	/welcome
+
+			// info
+			section.info
+				.wrapper
+					.info__container
+						.line.line--1.mobile-hide
+						.line.line--2
+						.line.line--3.mobile-hide
+						.row 
+							.info__col 
+								.info__text.info__text--pr
+									.text 
+										h6 Услуги
+										h3 Объединяем поставки из разных стран на нашем складе консолидации. 
+										p Регулярно отправляем в наших собственных машинах объединенные сборные грузы для оптимизации ваших затрат.
+										p Переупакуем, отсортируем, снимем на видео весь процесс работы и сфотографируем каждый товар отдельно.
+										p Самостоятельно оформляем все необходимые документы для экспорта из ЕС и транзита по территории Таможенного Союза. Деятельность склада, перевозчика и экспедитора застрахована.
+										p
+											a(href="#") Обработка грузов
+										p
+											a(href="#") Таможенное оформление
+							.info__col.info__col--center
+								// img-skew
+								.img-skew
+									.img-skew__skew
+										.img-skew__img
+											img(src="img/image-1.jpg", alt="")
+								//	/img-skew
+			//	/info
+
+			// info
+			section.info.info--black
+				.wrapper
+					.info__container
+						.line.line--1.mobile-hide
+						.line.line--2
+						.line.line--3.mobile-hide
+						.row 
+							.info__col.info__col--center.info__col--order-mob2
+								// img-skew
+								.img-skew.img-skew--revers
+									.img-skew__skew.img-skew__skew--revers
+										.img-skew__img.img-skew__img--revers
+											img(src="img/image-2.jpg", alt="")
+								//	/img-skew
+							.info__col.info__col--right.info__col--order-mob1
+								.info__text.info__text--pl
+									.text 
+										h6 О нас
+										h3 Своя сеть консолидирующих складов для грузов из Европы
+										p Выстроили систему транспортировки и обработки грузов, чтобы сделать доставку грузов из Европы в Россию простой и дешевой.
+										p Собственный автопарк из более чем 15 грузовых машин. Каждую пятницу отправляем в Россию сборные фуры из Вильнюса (Литвы) по максимально выгодным ценам.
+										p
+											a(href="#") О компании
+										p
+											a(href="#") Наши склады
+									.btn.btn--blue
+										span.btn__front Зарезервировать место в сборной фуре 
+			//	/info
+
+			.wrapper 
+				.lines__container 
+					.line.line--1.mobile-hide
+					.line.line--2
+					.line.line--3.mobile-hide
+					
+					include blocks/advantages.pug
+
+					include blocks/callback.pug
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
