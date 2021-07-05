@@ -1,0 +1,21 @@
+.titleblock {
+  padding-top: 65px;
+  padding-bottom: 70px;
+  h1 {
+    max-width: 780px;
+    margin-bottom: 20px;
+  }
+  h4 {
+    max-width: 780px;
+  }
+  @media (max-width: $break_sm) {
+    padding-top: 52px;
+    padding-bottom: 56px;
+    h1 {
+      margin-bottom: 12px;
+    }
+    h4 {
+      line-height: 33px;
+    }
+  }
+}

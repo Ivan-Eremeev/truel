@@ -177,38 +177,54 @@ $(document).ready(function () {
 	// }
 	// tabs($('.js-tabs'));
 
-	// // Аккордеон
-	// function accordion() {
-	// 	if ($('.accordion').length) {
-	// 		$('.accordion').each(function () {
-	// 			var accordion = $(this),
-	// 				trigger = accordion.find('.accordion__trigger'),
-	// 				time = 300;
-	// 			trigger.on('click', function () {
-	// 				var $thisTrigger = $(this),
-	// 					data = $thisTrigger.data('trigger');
-	// 				if (!$thisTrigger.hasClass('active')) {
-	// 					$thisTrigger.addClass('active');
-	// 					accordion.find('#' + data).stop().slideDown(
-	// 						time,
-	// 						function () {
-	// 							$(this).addClass('open')
-	// 						}
-	// 					);
-	// 				} else {
-	// 					$thisTrigger.removeClass('active');
-	// 					accordion.find('#' + data).stop().slideUp(
-	// 						time,
-	// 						function () {
-	// 							$(this).removeClass('open')
-	// 						}
-	// 					);
-	// 				}
-	// 			})
-	// 		})
-	// 	}
-	// }
-	// accordion();
+	// Аккордеон
+	function accordionProcess() {
+		if ($('.accoproc__accordion').length) {
+			$('.accoproc__accordion').each(function () {
+				var accordion = $(this),
+						trigger = accordion.find('.accordion__trigger'),
+						content = accordion.find('.accordion__content'),
+						img = accordion.find('.accoproc__img img'),
+						time = 300;
+				trigger.on('click', function () {
+					var $thisTrigger = $(this),
+							data = $thisTrigger.data('trigger');
+					if (!$thisTrigger.hasClass('active')) {
+						trigger.removeClass('active');
+						img.removeClass('active').css('display','none')
+						content.stop().slideUp(
+							time,
+							function () {
+								$(this).removeClass('open')
+							}
+						);
+						$thisTrigger.addClass('active');
+						$('.accoproc__img img[data-img ="' + data + '"]').stop().fadeIn(
+							time,
+							function () {
+								$(this).addClass('.active')
+							}
+						);
+						accordion.find(data).stop().slideDown(
+							time,
+							function () {
+								$(this).addClass('open')
+							}
+						);
+					} else {
+						$thisTrigger.removeClass('active');
+						accordion.find(data).stop().slideUp(
+							time,
+							function () {
+								$(this).removeClass('open')
+							}
+						);
+					}
+				})
+			})
+		}
+	}
+	accordionProcess();
 
 	// // Модальное окно
 	// function modal(modal) {

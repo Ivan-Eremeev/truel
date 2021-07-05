@@ -48,6 +48,9 @@
       }
     }
   }
+  &--pt {
+    padding-top: 100px;
+  }
   @media (max-width: $break_sm) {
     padding-top: 68px;
     padding-bottom: 87px;
@@ -78,6 +81,9 @@
       &__front {
         padding: 12px 30px;
       }
+    }
+    &--pt {
+      padding-top: 84px;
     }
   }
 }

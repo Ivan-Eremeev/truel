@@ -1,0 +1,137 @@
+.accoproc {
+  background-color: $black;
+  color: #fff;
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 68px;
+    border-left: 1px solid #24303F;
+    border-right: 1px solid #24303F;
+    position: relative;
+    .line {
+      background-color: #24303F;
+    }
+  }
+  .row {
+    @include no-gutter();
+    position: relative;
+  }
+  &__col {
+    @include col(6);
+    @include col-sm(12);
+  }
+  &__img {
+    margin-right: 10px;
+    text-align: center;
+    img {
+      width: 380px;
+      display: none;
+      &.active {
+        display: inline;
+      }
+    }
+  }
+  &__item {
+    &:not(:first-child) {
+      border-top: 1px solid #fff;
+    }
+  }
+  &__accordion {
+  }
+  &__trigger {
+    padding: 24px 40px 24px 0;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    &.active {
+      .accoproc__close {
+        &:before {
+          transform: translate(-50%,-50%) rotate(180deg);
+        }
+        &:after {
+          transform: translate(-50%,-50%) rotate(-180deg);
+        }
+      }
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__content {
+    display: none;
+    padding-bottom: 24px;
+    h4 {
+      margin-bottom: 15px;
+    }
+    &.open {
+      display: block;
+    }
+  }
+  &__close {
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 100%;
+    position: absolute;
+    top: 37px;
+    right: 0;
+    &:after,&:before {
+      content: '';
+      display: block;
+      width: 70%;
+      height: 2px;
+      background-color: $black;
+      position: absolute;
+      top: 50%;
+     left: 50%;
+    }
+    &:after {
+      transform: translate(-50%,-50%);
+      transition: 0.3s;
+    }
+    &:before {
+      transform: translate(-50%,-50%) rotate(90deg);
+      transition: 0.3s;
+    }
+  }
+  &__img-mob {
+    display: none;
+  }
+  @media (max-width: $break_sm) {
+    overflow: hidden;
+    &__container {
+      padding-top: 31px;
+      padding-bottom: 48px;
+    }
+    &__img {
+      display: none;
+    }
+    &__item {
+      position: relative;
+    }
+    &__wrap {
+      display: flex;
+      align-items: flex-end;
+    }
+    &__content {
+      
+    }
+    &__text {
+    }
+    &__trigger {
+    }
+    &__img-mob {
+      width: 220px;
+      display: block;
+      margin-right: -90px;
+    }
+    &__close {
+      top: 31px;
+    }
+  }
+  @media (max-width: $break_xs) {
+    &__img-mob {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,162 @@
+extends blocks/base.pug
+
+block title 
+	title О нас
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			
+			// pagination
+			.pagination
+				.wrapper
+					ul.pagination__list 
+						li 
+							a(href="#") Главная
+						li 
+							a(href="#") Услуги
+						li 
+							span Обработка
+			//	/pagination
+
+			// titleblock
+			.titleblock
+				.wrapper
+					h1 Обработка грузов
+					h4 Работаем больше, чтобы вы платили меньше — объединим поставки из разных стран, отсортируем и отправим их сборным грузом.
+			//	/titleblock
+
+			// accoproc
+			.accoproc
+				.wrapper 
+					.accoproc__container
+						.line.line--1.mobile-hide
+						.line.line--2
+						.line.line--3.mobile-hide
+						.accoproc__accordion
+							.row 
+								.accoproc__col
+									.accoproc__img 
+										img(src="img/pack.png", alt="" data-img="#trigger_1").active
+										img(src="img/image-1.jpg", alt="" data-img="#trigger_2")
+										img(src="img/image-2.jpg", alt="" data-img="#trigger_3")
+										img(src="img/pack.png", alt="" data-img="#trigger_4")
+										img(src="img/pack.png", alt="" data-img="#trigger_5")
+										img(src="img/pack.png", alt="" data-img="#trigger_6")
+										img(src="img/pack.png", alt="" data-img="#trigger_7")
+								.accoproc__col 
+									.accoproc__item
+										.accoproc__trigger.accordion__trigger(data-trigger="#trigger_1").active
+											h3 Упаковка
+											.accoproc__close
+										#trigger_1.accoproc__content.accordion__content.open
+											.accoproc__wrap
+												.accoproc__text
+													h4 Дополнительно упакуем и укрепим ваш груз. Например, можем упаковать его в жесткий каркас-обрешетку из деревянных досок на европаллете. Это гарантирует защиту груза от повреждений. 
+													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
+												img(src="img/pack.png", alt="").accoproc__img-mob
+									.accoproc__item
+										.accoproc__trigger.accordion__trigger(data-trigger="#trigger_2") 
+											h3 Переупаковка
+											.accoproc__close
+										#trigger_2.accoproc__content.accordion__content
+											.accoproc__wrap
+												.accoproc__text
+													h4 Дополнительно упакуем и укрепим ваш груз. Например, можем упаковать его в жесткий каркас-обрешетку из деревянных досок на европаллете. Это гарантирует защиту груза от повреждений. 
+													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
+												img(src="img/image-1.jpg", alt="").accoproc__img-mob
+									.accoproc__item
+										.accoproc__trigger.accordion__trigger(data-trigger="#trigger_3") 
+											h3 Взвешивание, фотографирование
+											.accoproc__close
+										#trigger_3.accoproc__content.accordion__content
+											.accoproc__wrap
+												.accoproc__text
+													h4 Дополнительно упакуем и укрепим ваш груз. Например, можем упаковать его в жесткий каркас-обрешетку из деревянных досок на европаллете. Это гарантирует защиту груза от повреждений. 
+													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
+												img(src="img/image-2.jpg", alt="").accoproc__img-mob
+									.accoproc__item
+										.accoproc__trigger.accordion__trigger(data-trigger="#trigger_4") 
+											h3 Маркировка
+											.accoproc__close
+										#trigger_4.accoproc__content.accordion__content
+											.accoproc__wrap
+												.accoproc__text
+													h4 Дополнительно упакуем и укрепим ваш груз. Например, можем упаковать его в жесткий каркас-обрешетку из деревянных досок на европаллете. Это гарантирует защиту груза от повреждений. 
+													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
+												img(src="img/pack.png", alt="").accoproc__img-mob
+									.accoproc__item
+										.accoproc__trigger.accordion__trigger(data-trigger="#trigger_5") 
+											h3 Сортировка
+											.accoproc__close
+										#trigger_5.accoproc__content.accordion__content
+											.accoproc__wrap
+												.accoproc__text
+													h4 Дополнительно упакуем и укрепим ваш груз. Например, можем упаковать его в жесткий каркас-обрешетку из деревянных досок на европаллете. Это гарантирует защиту груза от повреждений. 
+													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
+												img(src="img/pack.png", alt="").accoproc__img-mob
+									.accoproc__item
+										.accoproc__trigger.accordion__trigger(data-trigger="#trigger_6") 
+											h3 Видеосъемка
+											.accoproc__close
+										#trigger_6.accoproc__content.accordion__content
+											.accoproc__wrap
+												.accoproc__text
+													h4 Дополнительно упакуем и укрепим ваш груз. Например, можем упаковать его в жесткий каркас-обрешетку из деревянных досок на европаллете. Это гарантирует защиту груза от повреждений. 
+													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
+												img(src="img/pack.png", alt="").accoproc__img-mob
+									.accoproc__item
+										.accoproc__trigger.accordion__trigger(data-trigger="#trigger_7") 
+											h3 Хранение
+											.accoproc__close
+										#trigger_7.accoproc__content.accordion__content
+											.accoproc__wrap
+												.accoproc__text
+													h4 Дополнительно упакуем и укрепим ваш груз. Например, можем упаковать его в жесткий каркас-обрешетку из деревянных досок на европаллете. Это гарантирует защиту груза от повреждений. 
+													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
+												img(src="img/pack.png", alt="").accoproc__img-mob
+			//	/accoproc
+
+			.wrapper 
+				.lines__container 
+					.line.line--1.mobile-hide
+					.line.line--2
+					.line.line--3.mobile-hide
+					
+					include blocks/callback.pug
+					+callback('callback callback--pt')
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
