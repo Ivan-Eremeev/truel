@@ -1,12 +1,13 @@
 .titleblock {
   padding-top: 65px;
-  padding-bottom: 70px;
+  padding-bottom: 58px;
   h1 {
     max-width: 780px;
     margin-bottom: 20px;
   }
   h4 {
     max-width: 780px;
+    margin-bottom: 15px;
   }
   @media (max-width: $break_sm) {
     padding-top: 52px;

@@ -273,7 +273,7 @@ h5, h6 {
     left: 25%;
   }
   &--2 {
-    left: 50%;
+    left: calc(50% - 1px);
   }
   &--3 {
     left: 75%;
@@ -286,6 +286,14 @@ h5, h6 {
     border-color: #24303F;
     .line {
       background-color: #24303F;
+    }
+  }
+  &--p {
+    padding-top: 88px;
+  }
+  @media (max-width: $break_sm) {
+    &--p {
+      padding-top: 29px;
     }
   }
 }

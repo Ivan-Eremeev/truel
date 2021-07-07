@@ -226,6 +226,41 @@ $(document).ready(function () {
 	}
 	accordionProcess();
 
+	// Аккордеон
+	function accordion() {
+		if ($('.accordion').length) {
+			$('.accordion').each(function () {
+				var accordion = $(this),
+					trigger = accordion.find('.accordion__trigger'),
+					time = 300;
+				trigger.on('click', function () {
+					var $thisTrigger = $(this),
+						data = $thisTrigger.data('trigger');
+					if (!$thisTrigger.hasClass('active')) {
+						$thisTrigger.addClass('active');
+						$thisTrigger.closest('.accordion__item').addClass('active')
+						accordion.find('#' + data).stop().slideDown(
+							time,
+							function () {
+								$(this).addClass('open')
+							}
+						);
+					} else {
+						$thisTrigger.removeClass('active');
+						$thisTrigger.closest('.accordion__item').removeClass('active')
+						accordion.find('#' + data).stop().slideUp(
+							time,
+							function () {
+								$(this).removeClass('open')
+							}
+						);
+					}
+				})
+			})
+		}
+	}
+	accordion();
+
 	// // Модальное окно
 	// function modal(modal) {
 	// 	$('.modal-trigger').on('click', function() {

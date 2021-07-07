@@ -1,0 +1,123 @@
+.documents {
+  padding-top: 85px;
+  padding-bottom: 8px;
+  position: relative;
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__col {
+    width: 50%;
+  }
+  &__text {
+    margin-bottom: 50px;
+    h2 {
+      margin-bottom: 28px;
+    }
+  }
+  &__accordion {
+    
+  }
+  &__imgcontainer {
+    padding-left: 20px;
+    text-align: center;
+  }
+  &__img {
+    display: inline-block;
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      background-color: #DEEDF7;
+      transform: skew(10deg, 10deg);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -10px;
+      right: 10px;
+    }
+    img {
+      display: block;
+      position: relative;
+    }
+  }
+  &__item {
+    padding: 24px 40px 10px;
+    margin-bottom: 5px;
+    &.active {
+      background-color: #F1EFEF;
+    }
+  }
+  &__trigger {
+    font-weight: bold;
+    padding-left: 60px;
+    font-size: 21px;
+    line-height: 29px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    transition: 0.2s;
+    span {
+      display: block;
+      position: relative;
+      padding-right: 25px;
+      &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 7px;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='7' viewBox='0 0 10 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.78516 6.125C5.03125 6.37109 5.44141 6.37109 5.71484 6.125L9.43359 2.40625C9.67969 2.13281 9.67969 1.72266 9.43359 1.47656L8.80469 0.847656C8.53125 0.601562 8.12109 0.601562 7.875 0.847656L5.22266 3.5L2.59766 0.847656C2.35156 0.601562 1.94141 0.601562 1.66797 0.847656L1.06641 1.47656C0.792969 1.72266 0.792969 2.13281 1.06641 2.40625L4.78516 6.125Z' fill='black'/%3E%3C/svg%3E%0A");
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 11px;
+        right: 0;
+      }
+    }
+    &:hover {
+      color: $blue;
+    }
+  }
+  &__content {
+    display: none;
+    padding-top: 5px;
+    padding-bottom: 18px;
+    padding-left: 60px;
+  }
+  &__icon {
+    max-width: 40px;
+    position: absolute;
+    top: -5px;
+    left: 0;
+  }
+  @media (max-width: $break_md) {
+    &__col {
+      width: 100%;
+      &--mh {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: $break_sm) {
+    &__text {
+      margin-bottom: 24px;
+      h2 {
+        max-width: 460px;
+        font-size: 28px;
+        line-height: 36px;
+      }
+      h4 {
+        line-height: 33px;
+      }
+    }
+    &__item {
+      padding: 20px 16px 12px;
+      margin-bottom: 7px;
+    }
+    &__trigger {
+      span {
+        padding-right: 15px;
+      }
+    }
+  }
+}

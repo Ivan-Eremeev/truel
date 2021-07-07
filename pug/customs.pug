@@ -1,0 +1,141 @@
+extends blocks/base.pug
+
+block title 
+	title О нас
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			
+			// pagination
+			.pagination
+				.wrapper
+					ul.pagination__list 
+						li 
+							a(href="#") Главная
+						li 
+							a(href="#") Услуги
+						li 
+							span Обработка
+			//	/pagination
+
+			// titleblock
+			.titleblock
+				.wrapper
+					h1 Таможенное оформение
+					h4 Документальное сопровождение вашего груза, начиная со страны отправления, до момента выпуска импортной декларации в Российской Федерации. Оформления экспорта в странах ЕС, транзитных деклараций до склада консолидации, работа с морскими и авиалиниями.
+					h4 Представительства в Санкт-Петербурге, Москве, Новороссийске и Владивостоке.
+			//	/titleblock
+
+			.wrapper 
+				.lines__container.lines__container--p
+					.line.line--1.mobile-hide
+					.line.line--2
+					.line.line--3.mobile-hide
+
+					// customs-icons
+					.customs-icons
+						.customs-icons__row
+
+							.customs-icons__item 
+								.customs-icons__icon 
+									img(src="img/plane_icon.svg", alt="")
+								.customs-icons__text 
+									h3 Авиадоставка
+									p Таможенное оформление грузов в аэропортах
+							.customs-icons__item 
+								.customs-icons__icon 
+									img(src="img/car4_icon.svg", alt="")
+								.customs-icons__text 
+									h3 Автоперевозки
+									p Оформление грузов на таможенных складах и складах временного хранения
+							.customs-icons__item 
+								.customs-icons__icon 
+									img(src="img/ship_icon.svg", alt="")
+								.customs-icons__text 
+									h3 Морская доставка
+									p Таможенное оформление грузов в морских портах
+							.customs-icons__item 
+								.customs-icons__icon 
+									img(src="img/train_icon.svg", alt="")
+								.customs-icons__text 
+									h3 Железнодорожная доставка
+									p Оформление на ж/д станциях и складах временного хранения
+
+					//	/customs-icons
+
+					// documents
+					.documents
+						.documents__row 
+							.documents__col 
+								.documents__text 
+									h2 Поможем с оформлением документов по ВЭД
+									h4 С помощью наших партнеров подготовим все документы для проведения таможенного оформления груза. Поможем заключить внешнеторговый контракт. Будем представлять ваши интересы при досмотре товаров на таможне.
+								.documents__accordion
+									// accordion
+									.accordion
+										.documents__item.accordion__item
+											.documents__trigger.accordion__trigger(data-trigger="trigger_1") 
+												.documents__icon
+													img(src="img/man_icon.svg", alt="")
+												span Таможенное оформление грузов
+											#trigger_1.documents__content.accordion__content
+												p Проведение таможенной очистки
+										.documents__item.accordion__item
+											.documents__trigger.accordion__trigger(data-trigger="trigger_2") 
+												.documents__icon
+													img(src="img/man2_icon.svg", alt="")
+												span Получение разрешительной документации
+											#trigger_2.documents__content.accordion__content
+												p Проведение таможенной очистки
+										.documents__item.accordion__item
+											.documents__trigger.accordion__trigger(data-trigger="trigger_3") 
+												.documents__icon
+													img(src="img/stamp_icon.svg", alt="")
+												span Работа с органами сертификации
+											#trigger_3.documents__content.accordion__content
+												p Проведение таможенной очистки
+									// /accordion
+							.documents__col.documents__col--mh
+								.documents__imgcontainer
+									.documents__img
+										img(src="img/documents.png", alt="")
+					//	/documents
+
+					include blocks/callback.pug
+					+callback('callback')
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
