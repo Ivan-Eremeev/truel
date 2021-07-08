@@ -1,14 +1,1 @@
-<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="34" cy="34" r="34" fill="#0D1B2B"/>
-<path d="M26.839 46.2808L23.1326 53.0243" stroke="white" stroke-width="1.69671" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M45.9469 53.0233L42.1166 46.2822" stroke="white" stroke-width="1.69671" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M24.9385 50.4794H44.4507" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M46.1474 43.6924C46.1474 45.0981 45.0081 46.2375 43.6023 46.2375H24.9385C23.5328 46.2375 22.3934 45.0981 22.3934 43.6924V20.7868C22.3934 19.381 23.5328 18.2417 24.9385 18.2417H43.6023C45.0081 18.2417 46.1474 19.381 46.1474 20.7868V43.6924Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M22.3934 35.2088H46.1474" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M24.9385 39.4505H29.1803" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M39.3606 39.4505H43.6024" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M22.3934 22.4837H46.1474" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M22.3934 24.1802L19 26.7252V31.8154" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M46.1475 24.2231L49.5409 26.7249V31.8151" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M37.6638 18.2418L40.2089 14H28.3319L30.877 18.2418" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-</svg>
+<svg width="68" height="68" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="34" cy="34" r="34" fill="#0D1B2B"/><path d="M26.839 46.28l-3.706 6.744m22.814-.001l-3.83-6.74" stroke="#fff" stroke-width="1.697" stroke-linecap="round" stroke-linejoin="round"/><path d="M24.939 50.48H44.45" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/><path clip-rule="evenodd" d="M46.147 43.692a2.545 2.545 0 01-2.545 2.545H24.94a2.545 2.545 0 01-2.546-2.545V20.787a2.545 2.545 0 012.546-2.545h18.663a2.545 2.545 0 012.545 2.545v22.905z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/><path d="M22.393 35.209h23.754M24.939 39.45h4.241m10.18 0h4.242M22.393 22.484h23.754M22.393 24.18L19 26.725v5.09m27.148-7.592l3.393 2.502v5.09M37.664 18.242L40.209 14H28.332l2.545 4.242" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>

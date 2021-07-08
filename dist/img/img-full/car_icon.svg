@@ -1,0 +1,21 @@
+<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="34" cy="34" r="34" fill="#0D1B2B"/>
+<path d="M23.2843 40.2092H20.9277" stroke="white" stroke-width="1.5"/>
+<path d="M20.9278 33.9252L17.7856 33.1397V29.9976" stroke="white" stroke-width="1.5"/>
+<path d="M31.925 40.995V37.0674H24.8552V40.995" stroke="white" stroke-width="1.5"/>
+<path d="M33.4961 40.2092H35.8527" stroke="white" stroke-width="1.5"/>
+<path d="M35.8528 33.9252L38.9949 33.1397V29.9976" stroke="white" stroke-width="1.5"/>
+<path d="M19.3567 43.3516V45.7082C19.3567 46.1425 19.7086 46.4937 20.1422 46.4937H22.4988C22.9324 46.4937 23.2843 46.1425 23.2843 45.7082V43.3516" stroke="white" stroke-width="1.5"/>
+<path d="M33.4961 43.3516V45.7082C33.4961 46.1425 33.848 46.4937 34.2816 46.4937H36.6382C37.0718 46.4937 37.4237 46.1425 37.4237 45.7082V43.3516" stroke="white" stroke-width="1.5"/>
+<path d="M48.4211 43.3516V45.7082C48.4211 46.1425 48.7731 46.4937 49.2067 46.4937H51.5633C51.9969 46.4937 52.3488 46.1425 52.3488 45.7082V43.3516" stroke="white" stroke-width="1.5"/>
+<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="17" y="19" width="38" height="29">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M17 47.2791H54.7054V19H17V47.2791Z" fill="white"/>
+</mask>
+<g mask="url(#mask0)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.2842 33.9252H33.4961V29.9976H23.2842V33.9252Z" stroke="white" stroke-width="1.5"/>
+<path d="M35.8528 22.9277V34.7107L36.6384 35.4962C37.0311 35.889 37.4247 36.3556 37.4239 37.0673C37.4239 37.6329 37.4262 39.3752 37.4239 40.2094H38.9949V43.3515H17.7856V40.2094H19.3567C19.3543 39.3752 19.3567 37.6329 19.3567 37.0673C19.3559 36.3556 19.7495 35.889 20.1422 35.4962L20.9278 34.7107V22.9277" stroke="white" stroke-width="1.5"/>
+<path d="M35.8528 27.6409L34.8874 26.7438C34.31 26.0761 33.5928 26.0698 32.7107 26.0698H24.0699C23.1877 26.0698 22.4705 26.0761 21.8932 26.7438L20.9277 27.6409" stroke="white" stroke-width="1.5"/>
+<path d="M17.7856 28.4265V19.7856H38.9949V28.4265" stroke="white" stroke-width="1.5"/>
+<path d="M38.9949 19.7856H39.7804L53.9199 29.212V43.3515H40.5659" stroke="white" stroke-width="1.5"/>
+</g>
+</svg>

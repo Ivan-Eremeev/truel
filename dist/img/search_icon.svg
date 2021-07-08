@@ -1,13 +1,1 @@
-<svg width="45" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M19.1164 19.1162V38.1861" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M37.2326 18.1631V10.5352" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1164 1L1 9.58145V10.5349L19.1164 19.1164L37.2328 10.5349V9.58145L19.1164 1Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M28.6512 14.3488L9.79297 5.4165" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M22.9304 36.3801L19.1164 38.187L1 29.6055V10.5356" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M42.9512 29.6062C42.9512 34.8724 38.6815 39.1421 33.4153 39.1421C28.1501 39.1421 23.8804 34.8733 23.8804 29.6072C23.8804 24.341 28.1492 20.0713 33.4153 20.0713C38.6815 20.0713 42.9512 24.3401 42.9512 29.6062Z" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M28.6516 25.791V33.419" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M31.5119 25.791V33.419" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M35.3259 25.791V33.419" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M38.1862 25.791V33.419" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M39.1396 37.2329L43.9071 42.0004" stroke="black" stroke-width="1.5" stroke-linejoin="round"/>
-</svg>
+<svg width="45" height="43" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19.116 19.116v19.07m18.117-20.023v-7.628" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/><path clip-rule="evenodd" d="M19.116 1L1 9.581v.954l18.116 8.581 18.117-8.581V9.58L19.116 1z" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/><path d="M28.651 14.349L9.793 5.416M22.93 36.38l-3.814 1.807L1 29.606v-19.07" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/><path clip-rule="evenodd" d="M42.951 29.606c0 5.266-4.27 9.536-9.536 9.536-5.265 0-9.535-4.269-9.535-9.535s4.27-9.536 9.535-9.536c5.267 0 9.536 4.27 9.536 9.535z" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/><path d="M28.652 25.791v7.628m2.86-7.628v7.628m3.814-7.628v7.628m2.86-7.628v7.628m.954 3.814L43.907 42" stroke="#000" stroke-width="1.5" stroke-linejoin="round"/></svg>

@@ -1,8 +1,1 @@
-<svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="34" cy="34" r="34" fill="#0D1B2B"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M50.4004 17.3045C49.3538 16.2579 45.7378 18.1615 44.6911 19.2074L27.7506 36.1479C26.6182 37.2803 21.6761 43.7685 22.8063 44.8987C23.9364 46.0288 30.4246 41.0868 31.5571 39.9543L48.4976 23.0138C49.5434 21.9672 51.447 18.3512 50.4004 17.3045Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M35.791 35.7198L39.6817 39.6105L44.0181 47.7533L45.9521 47.7221L42.2284 29.2808" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M38.4187 25.4759L19.982 21.7529L19.9515 23.687L28.0944 28.0234L31.9867 31.9157" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M30.4183 41.0928L31.2963 47.8721L29.4668 48.7049L26.476 43.7207" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-<path d="M26.6123 37.2867L19.833 36.4087L19.0002 38.2382L23.9844 41.229" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
-</svg>
+<svg width="68" height="68" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="34" cy="34" r="34" fill="#0D1B2B"/><path clip-rule="evenodd" d="M50.4 17.305c-1.046-1.047-4.662.857-5.709 1.902l-16.94 16.94c-1.133 1.133-6.075 7.622-4.945 8.752 1.13 1.13 7.619-3.812 8.751-4.945l16.94-16.94c1.046-1.047 2.95-4.663 1.903-5.71z" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/><path d="M35.791 35.72l3.89 3.89 4.337 8.143 1.934-.03-3.724-18.442m-3.809-3.805l-18.437-3.723-.03 1.934 8.142 4.336 3.893 3.893m-1.569 9.177l.878 6.78-1.83.832-2.99-4.984m.136-6.434l-6.779-.878-.833 1.83 4.984 2.99" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg>
