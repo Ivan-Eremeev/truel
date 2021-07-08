@@ -32,22 +32,22 @@ block content
 							span и  реальными  условиями
 					.welcome__subtitle Популярные направления:
 					.welcome__row
-						.welcome__item 
+						.welcome__item.js-modal-trigger(data-modal="#route")
 							.welcome__direct Северная Америка — Россия
 							.welcome__text Сроки и цены
-						.welcome__item 
+						.welcome__item.js-modal-trigger(data-modal="#route")
 							.welcome__direct Северная Америка — Россия
 							.welcome__text Сроки и цены
-						.welcome__item 
+						.welcome__item.js-modal-trigger(data-modal="#route")
 							.welcome__direct Северная Америка — Россия
 							.welcome__text Сроки и цены
-						.welcome__item 
+						.welcome__item.js-modal-trigger(data-modal="#route")
 							.welcome__direct Китай и Азия — Россия
 							.welcome__text Сроки и цены
-						.welcome__item 
+						.welcome__item.js-modal-trigger(data-modal="#route")
 							.welcome__direct Китай и Азия — Россия
 							.welcome__text Сроки и цены
-						.welcome__item 
+						.welcome__item.js-modal-trigger(data-modal="#route")
 							.welcome__direct Китай и Азия — Россия
 							.welcome__text Сроки и цены
 			//	/welcome
@@ -111,16 +111,51 @@ block content
 										span.btn__front Зарезервировать место в сборной фуре 
 			//	/info
 
-			.wrapper 
-				.lines__container 
-					.line.line--1.mobile-hide
-					.line.line--2
-					.line.line--3.mobile-hide
+			//- .wrapper 
+			//- 	.lines__container 
+			//- 		.line.line--1.mobile-hide
+			//- 		.line.line--2
+			//- 		.line.line--3.mobile-hide
 					
-					include blocks/advantages.pug
+			include blocks/advantages.pug
 
-					include blocks/callback.pug
-					+callback('callback')
+			include blocks/callback.pug
+			+callback('callback')
+
+			include blocks/callback_modal.pug
+
+			// modal route1
+			.modal#route
+				.modal_body
+					.modal_content
+						.modal__text
+							h4 Северная Америка — Россия
+						ul.modal__list 
+							li.js-modal-trigger(data-modal="#route2")
+								h4 Автодоставка (фура)
+								p от 1 дня, от 1200 $
+							li.js-modal-trigger(data-modal="#route2")
+								h4 Автодоставка из Вильнюса в РФ
+								p 2-3 дня, от 170$ за паллету
+						.js-modal_close.modal_close
+			// /modal route1
+
+			// modal route2
+			.modal#route2
+				.modal_body
+					.modal_content
+						.modal__arrow.js-modal_close
+						.modal__text.modal__text--arrow
+							h4 Автодоставка из Вильнюса в РФ
+							p 2-3 дня, от 170$ за паллету. Оставьте свои данные и мы свями свяжемся для уточнения деталей
+						form(action="").modal__form
+							.modal__input 
+								input(type="text" placeholder="Номер телефона")
+							button(type="submit").btn.btn--white 
+								span.btn__front Заказать звонок
+						.modal__policy Отправляя форму вы соглашаетесь с политикой конфиденциальности
+						.js-modal_close.modal_close
+			// /modal route2
 			
 		include blocks/footer.pug
 

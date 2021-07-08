@@ -1,9 +1,11 @@
 .callback {
-  padding-top: 40px;
-  padding-bottom: 102px;
-  position: relative;
+  .lines__container {
+    padding-top: 40px;
+    padding-bottom: 102px;
+  }
   &__text {
     text-align: center;
+    position: relative;
     a {
       display: block;
       margin-top: 34px;
@@ -22,6 +24,7 @@
   &__row {
     display: flex;
     align-items: center;
+    position: relative;
   }
   &__btn {
     width: 50%;
@@ -52,11 +55,15 @@
     }
   }
   &--pt {
-    padding-top: 100px;
+    .lines__container {
+      padding-top: 100px;
+    }
   }
   @media (max-width: $break_sm) {
-    padding-top: 68px;
-    padding-bottom: 87px;
+    .lines__container {
+      padding-top: 68px;
+      padding-bottom: 87px;
+    }
     &__text {
       max-width: 370px;
       margin-left: auto;
@@ -86,7 +93,9 @@
       }
     }
     &--pt {
-      padding-top: 84px;
+      .lines__container {
+        padding-top: 84px;
+      }
     }
   }
 }

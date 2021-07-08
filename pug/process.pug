@@ -1,7 +1,7 @@
 extends blocks/base.pug
 
 block title 
-	title О нас
+	title Обработка
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
@@ -131,15 +131,11 @@ block content
 													h4 Также используем стрейч или пузырьковую пленку, стреппинг ленты, опломбированные мешки, картонные коробки.
 												img(src="img/pack.png", alt="").accoproc__img-mob
 			//	/accoproc
-
-			.wrapper 
-				.lines__container 
-					.line.line--1.mobile-hide
-					.line.line--2
-					.line.line--3.mobile-hide
 					
-					include blocks/callback.pug
-					+callback('callback callback--pt')
+			include blocks/callback.pug
+			+callback('callback callback--pt')
+
+			include blocks/callback_modal.pug
 			
 		include blocks/footer.pug
 

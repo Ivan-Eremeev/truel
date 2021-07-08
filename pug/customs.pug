@@ -1,7 +1,7 @@
 extends blocks/base.pug
 
 block title 
-	title О нас
+	title Таможня
 
 block style-libs
 	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
@@ -31,7 +31,7 @@ block content
 						li 
 							a(href="#") Услуги
 						li 
-							span Обработка
+							span Таможня
 			//	/pagination
 
 			// titleblock
@@ -42,14 +42,13 @@ block content
 					h4 Представительства в Санкт-Петербурге, Москве, Новороссийске и Владивостоке.
 			//	/titleblock
 
-			.wrapper 
-				.lines__container.lines__container--p
-					.line.line--1.mobile-hide
-					.line.line--2
-					.line.line--3.mobile-hide
-
-					// customs-icons
-					.customs-icons
+			// customs-icons
+			.customs-icons
+				.wrapper 
+					.lines__container.lines__container--p
+						.line.line--1.mobile-hide
+						.line.line--2
+						.line.line--3.mobile-hide
 						.customs-icons__row
 
 							.customs-icons__item 
@@ -77,10 +76,15 @@ block content
 									h3 Железнодорожная доставка
 									p Оформление на ж/д станциях и складах временного хранения
 
-					//	/customs-icons
+			//	/customs-icons
 
-					// documents
-					.documents
+			// documents
+			.documents
+				.wrapper 
+					.lines__container.lines__container--p
+						.line.line--1.mobile-hide
+						.line.line--2
+						.line.line--3.mobile-hide
 						.documents__row 
 							.documents__col 
 								.documents__text 
@@ -115,10 +119,12 @@ block content
 								.documents__imgcontainer
 									.documents__img
 										img(src="img/documents.png", alt="")
-					//	/documents
+			//	/documents
 
-					include blocks/callback.pug
-					+callback('callback')
+			include blocks/callback.pug
+			+callback('callback')
+
+			include blocks/callback_modal.pug
 			
 		include blocks/footer.pug
 

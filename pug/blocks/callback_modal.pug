@@ -1,0 +1,15 @@
+// modal callback
+.modal#callback
+  .modal_body
+    .modal_content
+      .modal__text.modal__text--center
+        h3 Обратный звонок
+        p Оставьте свои данные и мы свями свяжемся с вами в ближайшее время
+      form(action="").modal__form
+        .modal__input 
+          input(type="text" placeholder="Номер телефона")
+        button(type="submit").btn.btn--white 
+          span.btn__front Заказать звонок
+      .modal__policy Отправляя форму вы соглашаетесь с политикой конфиденциальности
+      .js-modal_close.modal_close
+// /modal callback

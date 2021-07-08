@@ -1,13 +1,18 @@
 mixin callback(className)
   // callback
   div(class= className)
-    .callback__text 
-      p Если у вас возникли вопросы мы готовы на них ответить 
-        a(href="tel:+78121234567") +7 (812) 123 45 67
-    .callback__row
-      .callback__btn
-        .btn.btn--white 
-          .btn__front Заказать звонок
-      .callback__link 
-        a(href="#") Перейти в контакты
+    .wrapper
+      .lines__container
+        .line.line--1.mobile-hide
+        .line.line--2
+        .line.line--3.mobile-hide
+        .callback__text 
+          p Если у вас возникли вопросы мы готовы на них ответить 
+            a(href="tel:+78121234567") +7 (812) 123 45 67
+        .callback__row
+          .callback__btn
+            .btn.btn--white 
+              .btn__front.js-modal-trigger(data-modal="#callback") Заказать звонок
+          .callback__link 
+            a(href="#") Перейти в контакты
   //	/callback

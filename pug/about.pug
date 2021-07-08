@@ -32,11 +32,15 @@ block content
 							span О нас
 			//	/pagination
 
+			// titleblock
+			.titleblock
+				.wrapper
+					h1 True-L — международная транспортная компания
+			//	/titleblock
+
 			// about
 			.about
 				.wrapper
-					.about__title 
-						h1 True-L — международная транспортная компания
 					.lines__container 
 						.line.line--1.mobile-hide
 						.line.line--2
@@ -97,7 +101,6 @@ block content
 								p Потому что мы не просто перевозим паллеты, килограммы или кубы. Каждый ваш заказ для нас — это реальный груз, со своими особенностями, к которым мы подходим с настоящей ответственностью. И это наш сервис, за который нас ценят как наши партнеры агенты, так и наши партнеры клиенты.
 								p Нужна ответственная доставка груза и помощь с оформлением документов? Будем рады вам помочь. 
 									a(href="#") Перейти в контакты
-
 			//	/about
 
 			// cases
@@ -115,17 +118,13 @@ block content
 								a(href="#").cases__link
 									.cases__subtitle Кейс: как мы доставляли груз в 22 тонны из Лондона в Москву за 3 дня и почему остальные перевозчики не хотели его вести
 									.cases__text 21 апреля 2021
-
-			.wrapper 
-				.lines__container 
-					.line.line--1.mobile-hide
-					.line.line--2
-					.line.line--3.mobile-hide
 					
-					include blocks/advantages.pug
+			include blocks/advantages.pug
 
-					include blocks/callback.pug
-					+callback('callback')
+			include blocks/callback.pug
+			+callback('callback')
+
+			include blocks/callback_modal.pug
 			
 		include blocks/footer.pug
 

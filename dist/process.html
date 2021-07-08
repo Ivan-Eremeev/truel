@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8">
-		<title>О нас</title>
+		<title>Обработка</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="keywords" content="">
 		<meta name="description" content="">
@@ -188,28 +188,48 @@
 					</div>
 				</div>
 				<!--	/accoproc-->
-				<div class="wrapper"> 
-					<div class="lines__container"> 
-						<div class="line line--1 mobile-hide"></div>
-						<div class="line line--2"></div>
-						<div class="line line--3 mobile-hide"></div>
-												<!-- callback-->
-												<div class="callback callback--pt">
-													<div class="callback__text"> 
-														<p>Если у вас возникли вопросы мы готовы на них ответить <a href="tel:+78121234567">+7 (812) 123 45 67</a></p>
-													</div>
-													<div class="callback__row">
-														<div class="callback__btn">
-															<div class="btn btn--white"> 
-																<div class="btn__front">Заказать звонок</div>
-															</div>
-														</div>
-														<div class="callback__link"> <a href="#">Перейти в контакты</a></div>
+								<!-- callback-->
+								<div class="callback callback--pt">
+									<div class="wrapper">
+										<div class="lines__container">
+											<div class="line line--1 mobile-hide"></div>
+											<div class="line line--2"></div>
+											<div class="line line--3 mobile-hide"></div>
+											<div class="callback__text"> 
+												<p>Если у вас возникли вопросы мы готовы на них ответить <a href="tel:+78121234567">+7 (812) 123 45 67</a></p>
+											</div>
+											<div class="callback__row">
+												<div class="callback__btn">
+													<div class="btn btn--white"> 
+														<div class="btn__front js-modal-trigger" data-modal="#callback">Заказать звонок</div>
 													</div>
 												</div>
-												<!--	/callback-->
+												<div class="callback__link"> <a href="#">Перейти в контакты</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--	/callback-->
+				<!-- modal callback-->
+				<div class="modal" id="callback">
+					<div class="modal_body">
+						<div class="modal_content">
+							<div class="modal__text modal__text--center">
+								<h3>Обратный звонок</h3>
+								<p>Оставьте свои данные и мы свями свяжемся с вами в ближайшее время</p>
+							</div>
+							<form class="modal__form" action="">
+								<div class="modal__input"> 
+									<input type="text" placeholder="Номер телефона">
+								</div>
+								<button class="btn btn--white" type="submit"> <span class="btn__front">Заказать звонок</span></button>
+							</form>
+							<div class="modal__policy">Отправляя форму вы соглашаетесь с политикой конфиденциальности</div>
+							<div class="js-modal_close modal_close"></div>
+						</div>
 					</div>
 				</div>
+				<!-- /modal callback-->
 			</div>
 			<!-- footer-->
 			<footer class="footer"> 

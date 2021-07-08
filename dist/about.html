@@ -61,12 +61,16 @@
 					</div>
 				</div>
 				<!--	/pagination-->
+				<!-- titleblock-->
+				<div class="titleblock">
+					<div class="wrapper">
+						<h1>True-L — международная транспортная компания</h1>
+					</div>
+				</div>
+				<!--	/titleblock-->
 				<!-- about-->
 				<div class="about">
 					<div class="wrapper">
-						<div class="about__title"> 
-							<h1>True-L — международная транспортная компания</h1>
-						</div>
 						<div class="lines__container"> 
 							<div class="line line--1 mobile-hide"></div>
 							<div class="line line--2"></div>
@@ -152,13 +156,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="wrapper"> 
-					<div class="lines__container"> 
-						<div class="line line--1 mobile-hide"></div>
-						<div class="line line--2"></div>
-						<div class="line line--3 mobile-hide"></div>
-						<!-- advantages-->
-						<section class="advantages">
+				<!-- advantages-->
+				<section class="advantages">
+					<div class="wrapper">
+						<div class="lines__container">
+							<div class="line line--1 mobile-hide"></div>
+							<div class="line line--2"></div>
+							<div class="line line--3 mobile-hide"></div>
 							<div class="advantages__title"> 
 								<h2>Почему выбирают нас</h2>
 							</div>
@@ -167,10 +171,8 @@
 									<div class="advantages__item">
 										<div class="advantages__icon"> <img src="img/hours_icon.svg" alt=""></div>
 										<div class="advantages__text"> 
-											<div class="text"> 
-												<h4>Работаем 24/7</h4>
-												<p>Круглосуточная поддержка клиентов </p>
-											</div>
+											<h4>Работаем 24/7</h4>
+											<p>Круглосуточная поддержка клиентов </p>
 										</div>
 									</div>
 								</div>
@@ -178,10 +180,8 @@
 									<div class="advantages__item">
 										<div class="advantages__icon"> <img src="img/car_icon.svg" alt=""></div>
 										<div class="advantages__text"> 
-											<div class="text"> 
-												<h4>Более 10 машин</h4>
-												<p>Собственный грузовой автопарк</p>
-											</div>
+											<h4>Более 10 машин</h4>
+											<p>Собственный грузовой автопарк</p>
 										</div>
 									</div>
 								</div>
@@ -189,9 +189,7 @@
 									<div class="advantages__item">
 										<div class="advantages__icon"> <img src="img/rouble_icon.svg" alt=""></div>
 										<div class="advantages__text"> 
-											<div class="text"> 
-												<h4>Гибкое и доступное ценообразование</h4>
-											</div>
+											<h4>Гибкое и доступное ценообразование</h4>
 										</div>
 									</div>
 								</div>
@@ -199,33 +197,58 @@
 									<div class="advantages__item">
 										<div class="advantages__icon"> <img src="img/shild_icon.svg" alt=""></div>
 										<div class="advantages__text"> 
-											<div class="text"> 
-												<h4>Ответственность</h4>
-												<p>Страхуем все отправления и несем материальную ответственость</p>
-											</div>
+											<h4>Ответственность</h4>
+											<p>Страхуем все отправления и несем материальную ответственость</p>
 										</div>
 									</div>
 								</div>
 							</div>
-						</section>
-						<!--	/advantages-->
-												<!-- callback-->
-												<div class="callback">
-													<div class="callback__text"> 
-														<p>Если у вас возникли вопросы мы готовы на них ответить <a href="tel:+78121234567">+7 (812) 123 45 67</a></p>
-													</div>
-													<div class="callback__row">
-														<div class="callback__btn">
-															<div class="btn btn--white"> 
-																<div class="btn__front">Заказать звонок</div>
-															</div>
-														</div>
-														<div class="callback__link"> <a href="#">Перейти в контакты</a></div>
+						</div>
+					</div>
+				</section>
+				<!--	/advantages-->
+								<!-- callback-->
+								<div class="callback">
+									<div class="wrapper">
+										<div class="lines__container">
+											<div class="line line--1 mobile-hide"></div>
+											<div class="line line--2"></div>
+											<div class="line line--3 mobile-hide"></div>
+											<div class="callback__text"> 
+												<p>Если у вас возникли вопросы мы готовы на них ответить <a href="tel:+78121234567">+7 (812) 123 45 67</a></p>
+											</div>
+											<div class="callback__row">
+												<div class="callback__btn">
+													<div class="btn btn--white"> 
+														<div class="btn__front js-modal-trigger" data-modal="#callback">Заказать звонок</div>
 													</div>
 												</div>
-												<!--	/callback-->
+												<div class="callback__link"> <a href="#">Перейти в контакты</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--	/callback-->
+				<!-- modal callback-->
+				<div class="modal" id="callback">
+					<div class="modal_body">
+						<div class="modal_content">
+							<div class="modal__text modal__text--center">
+								<h3>Обратный звонок</h3>
+								<p>Оставьте свои данные и мы свями свяжемся с вами в ближайшее время</p>
+							</div>
+							<form class="modal__form" action="">
+								<div class="modal__input"> 
+									<input type="text" placeholder="Номер телефона">
+								</div>
+								<button class="btn btn--white" type="submit"> <span class="btn__front">Заказать звонок</span></button>
+							</form>
+							<div class="modal__policy">Отправляя форму вы соглашаетесь с политикой конфиденциальности</div>
+							<div class="js-modal_close modal_close"></div>
+						</div>
 					</div>
 				</div>
+				<!-- /modal callback-->
 			</div>
 			<!-- footer-->
 			<footer class="footer"> 

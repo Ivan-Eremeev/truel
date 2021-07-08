@@ -1,0 +1,143 @@
+extends blocks/base.pug
+
+block title 
+	title Контакты
+
+block style-libs
+	//- link(rel="stylesheet", href="css/libs/bootstrap-grid.min.css")
+	//- link(rel="stylesheet", href="css/libs/fullpage.css")
+	//- link(rel="stylesheet", href="css/libs/hamburgers.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.fancybox.min.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.mmenu.all.css")
+	//- link(rel="stylesheet", href="css/libs/jquery.scrollbar.css")
+	//- link(rel="stylesheet", href="css/libs/slick.css")
+	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
+	//- link(rel="stylesheet", href="css/libs/aos.css")
+	link(rel="stylesheet", href="css/libs/magnific-popup.css")
+
+block content
+
+	.page
+
+		include blocks/header.pug
+		
+		.content
+			
+			// pagination
+			.pagination
+				.wrapper
+					ul.pagination__list 
+						li 
+							a(href="#") Главная
+						li 
+							span Контакты
+			//	/pagination
+
+			// titleblock
+			.titleblock
+				.wrapper
+					h1 Контакты
+			//	/titleblock
+
+			// contact
+			.contact
+				.wrapper
+					.lines__container.lines__container--p
+						.line.line--1.mobile-hide
+						.line.line--2
+						.line.line--3.mobile-hide
+						.row 
+							.contact__col.contact__col--1
+								.contact__text 
+									h4 График работы
+									p Офис работает с понедельника по пятницу с 9:00 до 18:00.
+									p Поддержка клиентов работает без выходных круглосуточно.
+							.contact__col.contact__col--2
+								.contact__text
+									h4 Телефон
+								ul.contact__list 
+									li 
+										a(href="tel:+78122223344") +7 812 222-33-44
+										span  (по России)
+									li 
+										a(href="tel:+79211233333") +7 921 123-33-33
+										span  (по миру)
+							.contact__col.contact__col--3
+								.contact__text 
+									h4 Почта
+									a(href="mailto:hello@true-l.ru") hello@true-l.ru
+							.contact__col.contact__col--4
+								.contact__text 
+									h4 Связаться
+								a(href="#").btn.btn--white 
+									span.btn__front 
+										<i class="fas fa-phone"></i>
+										span Задать вопрос
+								ul.contact__social 
+									li 
+										a(href="https://t.me/true_l" target="_blank")
+											<i class="fab fa-telegram contact__telegram"></i>
+											span Телеграм @true_l
+									li 
+										a(href="https://wa.me/79211231223?text=" target="_blank")
+											<i class="fab fa-whatsapp contact__whatapp"></i>
+											span Вотсапп +7 921 123-12-23
+			//	/contact
+
+			// mapscreen
+			.mapscreen
+				.wrapper
+					.lines__container.lines__container--p
+						.line.line--1.mobile-hide
+						.line.line--2
+						.line.line--3.mobile-hide
+						.mapscreen__title 
+							h3 
+								strong Ждем вас в гости! 
+								| Офис в Санкт-Петербурге, Социалистическая 21 (БЦ «Yes на Марата»), офис 2.105
+				.mapscreen__container 
+					.mapscreen__map 
+						#yandexMap
+					.mapscreen__images
+						.mapscreen__row
+							.mapscreen__col.mapscreen__col--1
+								.mapscreen__img
+									a(href="img/map_img-1.jpg").image-link
+										img(src="img/map_img-1.jpg", alt="")
+								.mapscreen__img
+									a(href="img/map_img-2.jpg").image-link
+										img(src="img/map_img-2.jpg", alt="")
+							.mapscreen__col.mapscreen__col--2
+								.mapscreen__img
+									a(href="img/map_img-3.jpg").image-link
+										img(src="img/map_img-3.jpg", alt="")
+								.mapscreen__img
+									a(href="img/map_img-4.jpg").image-link
+										img(src="img/map_img-4.jpg", alt="")
+			//	/mapscreen
+
+			include blocks/callback.pug
+			+callback('callback callback--pt')
+
+			include blocks/callback_modal.pug
+			
+		include blocks/footer.pug
+
+block js-libs
+	script(src="js/libs/jquery.min.js")
+	//- script(src="js/libs/jquery.fancybox.min.js")
+	//- script(src="js/libs/slick.min.js")
+	//- script(src="js/libs/jquery.matchHeight-min.js")
+	//- script(src="js/libs/jquery.inputmask.min.js")
+	//- script(src="js/libs/autosize.min.js")
+	//- script(src="js/libs/tooltipster.bundle.min.js")
+	//- script(src="js/libs/jquery.mmenu.min.all.js")
+	//- script(src="js/libs/fullpage.min.js")
+	//- script(src="js/libs/jquery.vide.min.js")
+	//- script(src="js/libs/jquery.scrollbar.min.js")
+	//- script(src="js/libs/aos.js")
+	//- script(src="js/libs/circle-progress.min.js")
+	//- script(src="js/libs/bootstrap.bundle.min.js") 
+	script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+	script(src="js/libs/jquery.magnific-popup.min.js") 
+	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")

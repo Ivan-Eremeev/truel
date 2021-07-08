@@ -12,7 +12,7 @@ $offset: 30px; // Поля контейнера
 $offset-sm: 15px; // Поля контейнера на мобилке
 // Брэйкпоинты
 $break_xl: 1400px;
-$break_lg: 1200px;
+$break_lg: 1240px;
 $break_md: 1050px;
 $break_sm: 769px;
 $break_xs: 500px;
@@ -25,13 +25,14 @@ $break_xs: 500px;
 @include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-regular", normal, normal);
 @include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-700", bold, normal);
 @include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-italic", normal, italic);
-@include font-face("PT Serif", "../fonts/pt-serif-v12-latin_cyrillic-700italic", bold, italic);
+@include font-face("PT Serif", "../fonts/pt-serif/pt-serif-v12-latin_cyrillic-700italic", bold, italic);
 
 @include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-regular", normal, normal);
 @include font-face("Fira Sans", "../fonts/fira-sans/fira-sans-v11-latin_cyrillic-700", bold, normal);
 
 @import 'fontawesome/fontawesome';
 @import 'fontawesome/brands';
+@import 'fontawesome/solid';
 
 // Цвета
 $black: #0D1B2B;
@@ -57,6 +58,6 @@ $bdc: #E7E7E7;
 @import 'blocks/accoproc';
 @import 'blocks/customs-icons';
 @import 'blocks/documents';
-// @import 'blocks/modal';
-// @import 'blocks/tooltipster-noir';
-// @import 'blocks/tabs';
+@import 'blocks/modal';
+@import 'blocks/contact';
+@import 'blocks/mapscreen';

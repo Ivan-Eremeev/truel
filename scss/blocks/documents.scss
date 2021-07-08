@@ -1,10 +1,12 @@
 .documents {
-  padding-top: 85px;
-  padding-bottom: 8px;
-  position: relative;
+  .lines__container {
+    padding-top: 85px;
+    padding-bottom: 8px;
+  }
   &__row {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
   &__col {
     width: 50%;
