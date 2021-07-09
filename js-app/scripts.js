@@ -6,6 +6,7 @@
 $(document).ready(function () {
 	
 	//= libs-settings/yandex-map-settings.js
+	//= libs-settings/slick_settings.js
 
 	// Запрет перехода по ссылкам с хэшем
 	$('a[href="#"]').click(function(e) {
@@ -131,7 +132,7 @@ $(document).ready(function () {
 	accordion();
 
 	// Модальное окно
-	function modal(modal) {
+	function modal() {
 		$('.js-modal-trigger').on('click', function() {
 			var $this = $(this),
 					data = $this.data('modal'),
@@ -142,9 +143,7 @@ $(document).ready(function () {
 	// Открытие модального окна
 	function modalShow(thisModal) {
 		var	modalClose = thisModal.find($('.js-modal_close'));
-		thisModal.show(0, function() {
-			thisModal.addClass('open');
-		});
+		thisModal.addClass('open');
 		modalClose.on('click', function() {
 			modalHide(thisModal);
 		});
@@ -158,8 +157,8 @@ $(document).ready(function () {
 	function modalHide(thisModal) {
 		thisModal.removeClass('open');
 		setTimeout(() => {
-			thisModal.hide();
-		}, 300);
+			$('.modal__slider').slick('slickGoTo', 0);
+		}, 500);
 	};
 	modal();
 
@@ -176,6 +175,6 @@ $(document).ready(function () {
 			});
 		}
 	}
-	clickToggle($('.js-click'));
+	clickToggle($('.js-click'));	
 
 });

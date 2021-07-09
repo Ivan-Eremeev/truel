@@ -1,5 +1,4 @@
 .modal {
-	display: none;
 	background-color: rgba(0,0,0,.3);
 	position: fixed;
 	top: 0;
@@ -8,6 +7,9 @@
 	right: 0;
 	overflow: auto;
 	z-index: 12;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.5s;
 	&_body {
 		max-width: 500px;
 		width: 100%;
@@ -16,8 +18,7 @@
 		position: absolute;
 		top: 50%;
 		left: 50%;
-		transform: translate(-50%,-50%) scale(0, 0);
-		opacity: 0;
+		transform: translate(-50%,-50%);
 		transition: .5s;
 	}
 	&-content, &_content {
@@ -53,10 +54,8 @@
 		}
 	}
 	&.open {
-		.modal_body {
-			transform: translate(-50%,-50%) scale(1, 1);
-			opacity: 1;
-		}
+		opacity: 1;
+		visibility: visible;
 	}
 	&__text {
 		margin-left: auto;
@@ -82,7 +81,7 @@
 		margin-bottom: 12px;
 	}
 	.btn {
-		width: 100%;
+		display: block;
 		text-align: center;
 	}
 	&__policy {
@@ -111,7 +110,7 @@
 				background-repeat: no-repeat;
 				position: absolute;
 				top: 12px;
-				right: 0;
+				right: 20px;
 			}
 			h4 {
 				line-height: 24px;
@@ -133,5 +132,9 @@
 			top: 7px;
 			left: 0;
 		}
+	}
+	&__slide {
+		position: relative;
+		padding: 0 1px;
 	}
 }

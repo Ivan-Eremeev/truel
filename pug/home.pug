@@ -13,6 +13,7 @@ block style-libs
 	//- link(rel="stylesheet", href="css/libs/slick.css")
 	//- link(rel="stylesheet", href="css/libs/tooltipster.bundle.min.css")
 	//- link(rel="stylesheet", href="css/libs/aos.css")
+	link(rel="stylesheet", href="css/libs/slick.css")
 
 block content
 
@@ -110,12 +111,6 @@ block content
 									.btn.btn--blue
 										span.btn__front Зарезервировать место в сборной фуре 
 			//	/info
-
-			//- .wrapper 
-			//- 	.lines__container 
-			//- 		.line.line--1.mobile-hide
-			//- 		.line.line--2
-			//- 		.line.line--3.mobile-hide
 					
 			include blocks/advantages.pug
 
@@ -128,34 +123,33 @@ block content
 			.modal#route
 				.modal_body
 					.modal_content
-						.modal__text
-							h4 Северная Америка — Россия
-						ul.modal__list 
-							li.js-modal-trigger(data-modal="#route2")
-								h4 Автодоставка (фура)
-								p от 1 дня, от 1200 $
-							li.js-modal-trigger(data-modal="#route2")
-								h4 Автодоставка из Вильнюса в РФ
-								p 2-3 дня, от 170$ за паллету
-						.js-modal_close.modal_close
-			// /modal route1
+						.modal__slider
+							.modal__slide 
+								.modal__text
+									h4 Северная Америка — Россия
+								ul.modal__list 
+									li.modal__btn-next
+										h4 Автодоставка (фура)
+										p от 1 дня, от 1200 $
+									li.modal__btn-next
+										h4 Автодоставка из Вильнюса в РФ
+										p 2-3 дня, от 170$ за паллету
+								.js-modal_close.modal_close
 
-			// modal route2
-			.modal#route2
-				.modal_body
-					.modal_content
-						.modal__arrow.js-modal_close
-						.modal__text.modal__text--arrow
-							h4 Автодоставка из Вильнюса в РФ
-							p 2-3 дня, от 170$ за паллету. Оставьте свои данные и мы свями свяжемся для уточнения деталей
-						form(action="#").modal__form
-							.modal__input 
-								input(type="text" placeholder="Номер телефона")
-							button(type="submit").btn.btn--white 
-								span.btn__front Заказать звонок
-						.modal__policy Отправляя форму вы соглашаетесь с политикой конфиденциальности
-						.js-modal_close.modal_close
-			// /modal route2
+							.modal__slide
+								.modal__level
+									.modal__arrow.modal__btn-prev
+									.modal__text.modal__text--arrow
+										h4 Автодоставка из Вильнюса в РФ
+										p 2-3 дня, от 170$ за паллету. Оставьте свои данные и мы свями свяжемся для уточнения деталей
+									form(action="#").modal__form
+										.modal__input 
+											input(type="text" placeholder="Номер телефона")
+										button(type="submit").btn.btn--white 
+											span.btn__front Заказать звонок
+									.modal__policy Отправляя форму вы соглашаетесь с политикой конфиденциальности
+									.js-modal_close.modal_close
+			// /modal route1
 			
 		include blocks/footer.pug
 
@@ -176,3 +170,4 @@ block js-libs
 	//- script(src="js/libs/bootstrap.bundle.min.js") 
 	//- script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
 	//- script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDArYzQvxn3CL3pB92Iqn9gaDltBFLfF4Y")
+	script(src="js/libs/slick.min.js") 

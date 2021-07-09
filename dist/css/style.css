@@ -7109,7 +7109,8 @@ h6 {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  border: 1px solid #E7E7E7;
+  border-left: 1px solid #E7E7E7;
+  border-right: 1px solid #E7E7E7;
   margin-left: 45px;
   font-size: 14px;
 }
@@ -7640,6 +7641,7 @@ h6 {
 
 .pagination {
   padding: 10px 0;
+  background-color: #fff;
 }
 
 .pagination__list {
@@ -7840,6 +7842,7 @@ h6 {
 .titleblock {
   padding-top: 65px;
   padding-bottom: 58px;
+  background-color: #fff;
 }
 
 .titleblock h1 {
@@ -8161,7 +8164,6 @@ h6 {
 }
 
 .modal {
-  display: none;
   background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
@@ -8170,6 +8172,11 @@ h6 {
   right: 0;
   overflow: auto;
   z-index: 12;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .modal_body {
@@ -8180,10 +8187,9 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%) scale(0, 0);
-  -ms-transform: translate(-50%, -50%) scale(0, 0);
-  transform: translate(-50%, -50%) scale(0, 0);
-  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
@@ -8236,11 +8242,9 @@ h6 {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-.modal.open .modal_body {
-  -webkit-transform: translate(-50%, -50%) scale(1, 1);
-  -ms-transform: translate(-50%, -50%) scale(1, 1);
-  transform: translate(-50%, -50%) scale(1, 1);
+.modal.open {
   opacity: 1;
+  visibility: visible;
 }
 
 .modal__text {
@@ -8273,7 +8277,7 @@ h6 {
 }
 
 .modal .btn {
-  width: 100%;
+  display: block;
   text-align: center;
 }
 
@@ -8308,7 +8312,7 @@ h6 {
   background-repeat: no-repeat;
   position: absolute;
   top: 12px;
-  right: 0;
+  right: 20px;
 }
 
 .modal__list li h4 {
@@ -8331,6 +8335,11 @@ h6 {
   position: absolute;
   top: 7px;
   left: 0;
+}
+
+.modal__slide {
+  position: relative;
+  padding: 0 1px;
 }
 
 .contact {
@@ -8544,6 +8553,8 @@ h6 {
   display: block;
   width: 100%;
   border-radius: 10px;
+  -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
 }
 
 @media (min-width: 770px) {
@@ -8910,7 +8921,7 @@ h6 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 33px 34px 18px;
+    padding: 33px;
     background-color: #fff;
     position: relative;
   }
@@ -8919,10 +8930,11 @@ h6 {
     -ms-flex-negative: 0;
     flex-shrink: 0;
     margin-right: 33px;
+    margin-bottom: 0;
   }
 
   .advantages__text {
-    padding-top: 10px;
+    padding-top: 5px;
   }
 
   .callback .lines__container {
@@ -9258,11 +9270,16 @@ h6 {
   }
 
   .advantages__item {
-    padding: 33px 10px 18px;
+    padding: 33px 10px;
+  }
+
+  .accoproc__wrap {
+    display: block;
   }
 
   .accoproc__img-mob {
-    display: none;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .customs-icons__item {

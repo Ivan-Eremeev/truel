@@ -130,8 +130,12 @@
     }
   }
   @media (max-width: $break_xs) {
+    &__wrap {
+      display: block;
+    }
     &__img-mob {
-      display: none;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

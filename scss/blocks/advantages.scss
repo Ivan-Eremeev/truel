@@ -59,21 +59,22 @@
     }
     &__item {
       display: flex;
-      padding: 33px 34px 18px;
+      padding: 33px;
       background-color: #fff;
       position: relative;
     }
     &__icon {
       flex-shrink: 0;
       margin-right: 33px;
+      margin-bottom: 0;
     }
     &__text {
-      padding-top: 10px;
+      padding-top: 5px;
     }
   }
   @media (max-width: $break_xs) {
     &__item {
-      padding: 33px 10px 18px;
+      padding: 33px 10px;
     }
   }
 }
